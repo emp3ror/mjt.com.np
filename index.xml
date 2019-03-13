@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MJT</title>
+    <link>http://mjt.com.np/</link>
+    <description>Recent content on MJT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Mar 2019 12:48:57 +0000</lastBuildDate>
+    
+	<atom:link href="http://mjt.com.np/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WebWeekend Kathmandu 2018 </title>
+      <link>http://mjt.com.np/posts/tech/wwktm-2018/</link>
+      <pubDate>Wed, 13 Mar 2019 12:48:57 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/posts/tech/wwktm-2018/</guid>
+      <description>I will write about web weekend 2018 here (hopefully someday)</description>
+    </item>
+    
+    <item>
+      <title>Switching to HUGO</title>
+      <link>http://mjt.com.np/posts/tech/using-hugo/</link>
+      <pubDate>Wed, 13 Mar 2019 12:48:42 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/posts/tech/using-hugo/</guid>
+      <description>From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&amp;hellip; yay
+Markdown plugin for vscode I am using this plugin for easy typing/creating markdown Markdown All in One.
+Seems, MD is already supported by vscode but I installed it anyway :D :D
+Date plugin for vscode While creating blog post in text-editor, it hard to add date so I installed this plugin.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://mjt.com.np/about/</link>
+      <pubDate>Sat, 08 Nov 2014 16:42:18 +0400</pubDate>
+      
+      <guid>http://mjt.com.np/about/</guid>
+      <description>Few words about project.</description>
+    </item>
+    
+  </channel>
+</rss>
