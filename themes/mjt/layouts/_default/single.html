@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div class="card col">
+  <div class="card-body">
+    <h1>{{ .Title }}</h1>
+    <div class="date">
+      {{.Date.Format "2006-01-02"}}
+    </div>
+    <hr />
+    <div class="content">
+      <article class="post-content">
+        {{ .Content }}
+      </article>
+    </div>
+  </div>
+</div>
+
+{{ end }}

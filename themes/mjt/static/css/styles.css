@@ -1,0 +1,224 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  background: #2c3e50;
+  padding: 12px 0px 14px 0;
+  width: 600px;
+  color: #ecf0f1;
+  line-height: 140%;
+}
+pre code {
+  padding-right: 1em;
+  /* space after numbers */
+  padding-left: 8px;
+  width: 1.5em;
+  text-align: right;
+  opacity: 0.5;
+  color: white;
+}
+
+.content {
+  font-size: 17px;
+  color: #231f20;
+  line-height: 26px;
+  text-size-adjust: 100%;
+  cursor: default;
+  font-family: "Proxima Nova", -apple-system, system-ui, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", helvetica, Arial, arial, sans-serif;
+}
+
+.content h2 {
+  font-size: 38px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: Tiempos, "Georgia", georgia, "Times New Roman", "Times", times,
+    serif;
+  font-weight: 600;
+  color: #231f20;
+}
+
+.wrapper {
+  /* height: 100%; */
+  padding-bottom: 150px;
+}
+.wrapper.base {
+  background: #f2f2f2;
+  padding-top: 100px;
+}
+.wrapper.base > .container {
+  /* background: #fff; */
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.page-footer {
+  /* position: relative; */
+  background: #f2f2f2;
+  /* height: 150px; */
+  /* margin-top: -150px; */
+}
+
+.intro-header {
+  position: relative;
+  height: 500px;
+  /* min-height: 80%; */
+}
+
+.site-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+.site-heading h1 {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 5em;
+}
+
+.homepage {
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  .homepage {
+    width: 860px;
+  }
+}
+
+.card.colored {
+  border: none;
+  border-radius: 0;
+  min-height: 200px;
+}
+
+.card.green {
+  background: #1bd98d;
+  padding: 60px;
+  color: #fff;
+}
+
+.card.blue {
+  background: #2bbdf0;
+  padding: 40px;
+}
+
+.card.grey {
+  background: #e4eef0;
+  padding: 20px 40px 0px 40px;
+}
+
+.card.red {
+  background: #fc5c63;
+  padding: 40px;
+}
+
+.card.layout-ht-600 {
+  height: 600px;
+  padding: 60px;
+  color: #fff;
+}
+
+.greenImg {
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 0 50px #005b37;
+  transition-duration: 0.8s;
+}
+
+.pngHolder > * {
+  position: absolute;
+  color: #c9c9c9;
+  font-size: 3em;
+  vertical-align: baseline;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0%);
+}
+
+@media only screen and (min-width: 600px) {
+  .greenImg {
+    /* width: 120%; */
+    /* margin-left: -10%; */
+  }
+}
+
+.greenImg.img1 {
+  transform: rotate(20deg);
+}
+
+.greenImg.img2 {
+  transform: rotate(-20deg);
+}
+
+.greenImg.img3 {
+  transform: rotate(20deg);
+}
+
+.green:hover .greenImg.img1 {
+  transform: rotate(-20deg);
+}
+
+.green:hover .greenImg.img2 {
+  transform: rotate(20deg);
+}
+
+.green:hover .greenImg.img3 {
+  transform: rotate(-20deg);
+}
+
+.greyImg {
+  width: 100%;
+  border: 1px solid #f2f2f2;
+}
+
+.fill-height-or-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height-or-more > div {
+  /* these are the flex items */
+  flex: 1;
+}
+
+.homepage {
+  font-family: Open Sans, sans-serif;
+}
+
+.homepage .topSection {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.homepage .topSection .text {
+  font-size: 21px;
+  color: #505050;
+  line-height: 1.6em;
+}
+
+.homepage .topList li {
+  text-decoration: none;
+  font-size: 21px;
+  list-style: none !important;
+}
+
+.homepage .topList li a {
+  color: rgb(235, 53, 82);
+  line-height: 1.6em;
+}
+
+.iKnow img {
+  width: 100px;
+}
