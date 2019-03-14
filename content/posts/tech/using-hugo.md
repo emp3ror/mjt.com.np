@@ -8,11 +8,16 @@ author = "admin"
 
 From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO... yay
 
-I did thought, "Oh why not just use medium.com and get rid of all setting up hassles", then god spoke with this 
-medium.png
+I did thought, "Oh why not just use medium.com and get rid of all setting up hassles", then god spoke with this message from medium.com
 ![Medium image](/img/medium.png)
 
 At that point, I realised, I shouldn't host my amazing articles ( :P ) in others' platform :D :D
+
+## Hugo
+Hugo is open-source static site builder written in Go lang. To know more about check hugo official site [https://gohugo.io/](https://gohugo.io/)
+
+### Getting Ready for Hugo in VSCODE
+Hugo use mark down for writing blogs/article. Instead of using different IDE, I am using VSCODE which I already use for my works. Below are few plugins I added in Vscode.
 
 #### Markdown plugin for vscode
 
