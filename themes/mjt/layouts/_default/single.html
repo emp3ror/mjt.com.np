@@ -13,6 +13,15 @@
       </article>
     </div>
   </div>
+
+  <hr>
+  <div class="fb-like" 
+    data-href="{{ .Site.BaseURL }}{{ .RelPermalink }}" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>
+  <div class="fb-comments" data-href="{{ .Site.BaseURL }}{{ .RelPermalink }}" data-numposts="5"></div>
 </div>
 
 {{ end }}

@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="{{ .Summary }}" />
+    <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}{{ .RelPermalink }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Summary }}" />
     <link rel="canonical" href="{{ .Permalink }}" />
 
     <link
@@ -22,8 +26,8 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/styles.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/styles.css" />
   </head>
   <body>
-  </body>
-</html>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"></script>
