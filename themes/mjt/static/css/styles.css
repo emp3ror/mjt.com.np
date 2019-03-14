@@ -262,3 +262,8 @@ pre code {
 .card {
   border: 1px solid #eee;
 }
+
+
+.post-content img {
+  max-width: 100%;
+}
