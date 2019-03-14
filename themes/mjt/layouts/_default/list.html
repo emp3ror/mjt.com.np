@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="container">
+<main class="container listpage">
   <article>
     <header>
       <h1>{{.Title}}</h1>
@@ -13,19 +13,23 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <h2>
-            <a href="{{.Permalink}}">{{.Title}}</a>
-          </h2>
-          <div>{{.Date.Format "2006-01-02"}}</div>
+          <a href="{{.Permalink}}"></a><h1>
+            {{.Title}}
+          </h1>
+        </a>
+          <div class="date">{{.Date.Format "2006-01-02"}}</div>
         </div>
         <div class="card-body">
+          <p>
           {{ .Summary }}
+          
           {{ if .Truncated }}
           <!-- This <s> includes a read more link, but only if the summary is truncated... -->
           <span>
             <a href="{{ .RelPermalink }}">Read More…</a>
           </span>
           {{ end }}
+        </p>
         </div>
       </div>
     </div>
