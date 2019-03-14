@@ -8,6 +8,12 @@ author = "admin"
 
 From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO... yay
 
+I did thought, "Oh why not just use medium.com and get rid of all setting up hassles", then god spoke with this 
+medium.png
+![Medium image](/img/medium.png)
+
+At that point, I realised, I shouldn't host my amazing articles ( :P ) in others' platform :D :D
+
 #### Markdown plugin for vscode
 
 I am using this plugin for easy typing/creating markdown
