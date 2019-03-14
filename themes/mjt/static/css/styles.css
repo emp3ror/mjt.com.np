@@ -251,6 +251,10 @@ pre code {
   font-weight: 400;
 }
 
+.listpage .listDesc {
+  color: rgb(153, 153, 153);
+}
+
 .listpage .card .card-header .date {
   color: #666;
   margin: 0;
