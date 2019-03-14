@@ -33,3 +33,10 @@ While creating blog post in text-editor, it hard to add date so I installed this
 [insert Date Time](https://marketplace.visualstudio.com/items?itemname=jsynowiec.vscode-insertdatestring)
 
     Ctrl+Alt+Shift+I then ISO // to insert iso date
+
+
+### Git worktree
+Amazingly I got to learn about git worktree. Its a feature of git to have a folder with different branch in same repository. Learn more about git worktree in [git website](https://git-scm.com/docs/git-worktree)
+
+    // Setting up public directory with gh-pages branch
+    $ git worktree add -B gh-pages public origin/gh-pages
