@@ -6,16 +6,16 @@
     <title>Switching to HUGO - MJT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&hellip; yay
-I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this medium.png At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D
-Markdown plugin for vscode I am using this plugin for easy typing/creating markdown Markdown All in One." />
+I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this message from medium.com At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D
+Hugo Hugo is open-source static site builder written in Go lang." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
     <meta property="og:url" content="http://mjt.com.np//posts/tech/using-hugo/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Switching to HUGO" />
     <meta property="og:description" content="From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&hellip; yay
-I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this medium.png At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D
-Markdown plugin for vscode I am using this plugin for easy typing/creating markdown Markdown All in One." />
+I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this message from medium.com At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D
+Hugo Hugo is open-source static site builder written in Go lang." />
     <link rel="canonical" href="http://mjt.com.np/posts/tech/using-hugo/" />
 
     <link
@@ -66,11 +66,18 @@ Markdown plugin for vscode I am using this plugin for easy typing/creating markd
 
 <p>From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&hellip; yay</p>
 
-<p>I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this
-medium.png
+<p>I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this message from medium.com
 <img src="/img/medium.png" alt="Medium image" /></p>
 
 <p>At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D</p>
+
+<h2 id="hugo">Hugo</h2>
+
+<p>Hugo is open-source static site builder written in Go lang. To know more about check hugo official site <a href="https://gohugo.io/">https://gohugo.io/</a></p>
+
+<h3 id="getting-ready-for-hugo-in-vscode">Getting Ready for Hugo in VSCODE</h3>
+
+<p>Hugo use mark down for writing blogs/article. Instead of using different IDE, I am using VSCODE which I already use for my works. Below are few plugins I added in Vscode.</p>
 
 <h4 id="markdown-plugin-for-vscode">Markdown plugin for vscode</h4>
 
@@ -86,6 +93,14 @@ medium.png
 <p><a href="https://marketplace.visualstudio.com/items?itemname=jsynowiec.vscode-insertdatestring">insert Date Time</a></p>
 
 <pre><code>Ctrl+Alt+Shift+I then ISO // to insert iso date
+</code></pre>
+
+<h3 id="git-worktree">Git worktree</h3>
+
+<p>Amazingly I got to learn about git worktree. Its a feature of git to have a folder with different branch in same repository. Learn more about git worktree in <a href="https://git-scm.com/docs/git-worktree">git website</a></p>
+
+<pre><code>// Setting up public directory with gh-pages branch
+$ git worktree add -B gh-pages public origin/gh-pages
 </code></pre>
 
       </article>
