@@ -94,11 +94,10 @@ pre code {
 
 @media only screen and (min-width: 600px) {
   .homepage,
-  .listpage {
+  .listpage,
+  .single {
     width: 860px;
   }
-
-  
 }
 
 .card.colored {
@@ -234,33 +233,32 @@ pre code {
 .listpage .card .card-header {
   background: #fff;
   border: none;
-  
 }
 
 .listpage .card .card-header h1 {
-font-family: Poppins,sans-serif;
-    font-size: 36px;
-    letter-spacing: 1px;
-    line-height: 42px;
-    font-weight: 700;
-    color: #282d31;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #282d31;
 }
 
 .listpage .card .card-body p {
   color: #666;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 .listpage .card .card-header .date {
   color: #666;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .card {
-  border : 1px solid #eee;
+  border: 1px solid #eee;
 }
