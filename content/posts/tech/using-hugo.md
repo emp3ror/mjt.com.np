@@ -4,6 +4,7 @@ date = "2019-03-13T12:48:42Z"
 tags = ["test"]
 draft = false
 author = "admin"
+
 +++
 
 From this day, I am using HUGO, switched from Wordpress to my own [Angularjs SPA static site](https://github.com/emp3ror/static-site-generator) to HUGO... yay
