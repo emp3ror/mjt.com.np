@@ -192,7 +192,7 @@ Making the Secret key `large`, not using `common words` and also not using known
 
 With speed of 1,000,000,000 Passwords/sec, cracking a 8 character password composed using 96 characters takes 83.5 days.
 
-our password is 11 characters long and has 542,950,367,897,600 combinations. It takes 10,534.62 hours or 438.94 days to crack your password on computer that tries 25,769,803,776 passwords per hour.
+Key, 11 characters long and has 542,950,367,897,600 combinations. It takes 10,534.62 hours or 438.94 days to crack key on computer that tries 25,769,803,776 keys per hour.
 [More](https://web.archive.org/web/20180412051235/http://www.lockdown.co.uk/?pg=combi&s=articles)
 
 So using longer Secret key with alphanumeric seems safe to be used with JWT
