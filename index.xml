@@ -6,18 +6,29 @@
     <description>Recent content on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2019 12:48:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 05:59:53 +0000</lastBuildDate>
     
 	<atom:link href="http://mjt.com.np/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>All about JWT</title>
+      <link>http://mjt.com.np/posts/tech/all-about-jwt/</link>
+      <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/posts/tech/all-about-jwt/</guid>
+      <description>JWT RFC7519 states:
+JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted.</description>
+    </item>
+    
+    <item>
       <title>WebWeekend Kathmandu 2018 </title>
       <link>http://mjt.com.np/posts/tech/wwktm-2018/</link>
-      <pubDate>Wed, 13 Mar 2019 12:48:57 +0000</pubDate>
+      <pubDate>Thu, 14 Mar 2019 16:20:47 +0000</pubDate>
       
       <guid>http://mjt.com.np/posts/tech/wwktm-2018/</guid>
-      <description>I will write about web weekend 2018 here (hopefully someday)</description>
+      <description>I will write about web weekend 2018 here (hopefully someday)
+Web Weekend Kathmandu is happening this year on septmember. Visit past wwktm</description>
     </item>
     
     <item>
