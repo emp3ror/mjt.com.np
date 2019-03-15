@@ -1,4 +1,12 @@
 {{ define "main" }}
+{{if isset .Params "featureimg"}}
+<div class="featuredImg">
+  <img src="{{$.Param "featureimg"}}" alt="" width="100%">
+</div>
+<div class="col-md-12 featuredImgSpace">
+
+</div>
+{{end}}
 <div class="container single">
   <div class="card col">
     <div class="card-body">

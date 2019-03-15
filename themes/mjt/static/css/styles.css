@@ -271,3 +271,22 @@ pre code {
 .post-content img {
   max-width: 100%;
 }
+
+.featuredImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  overflow: hidden;  
+}
+
+.featuredImg img {
+  width: 100%;
+  transform: translate(0%,-20%);
+}
+
+
+.featuredImgSpace {
+  min-height: 150px;
+}
