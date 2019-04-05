@@ -6,10 +6,19 @@
     <description>Recent content in Tags on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Mar 2019 05:59:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2019 14:54:42 +0000</lastBuildDate>
     
 	<atom:link href="http://mjt.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Mining</title>
+      <link>http://mjt.com.np/tags/data-mining/</link>
+      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/data-mining/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Jwt</title>
@@ -26,6 +35,24 @@
       <pubDate>Thu, 30 Aug 2018 18:34:02 +0000</pubDate>
       
       <guid>http://mjt.com.np/tags/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://mjt.com.np/tags/r/</link>
+      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Run</title>
+      <link>http://mjt.com.np/tags/run/</link>
+      <pubDate>Fri, 05 Apr 2019 03:47:28 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/run/</guid>
       <description></description>
     </item>
     
