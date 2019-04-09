@@ -122,8 +122,7 @@ var signature = atob(arr[2]);
 
 <ul>
 <li>header : it contains information about algorithm used while creating this JWT</li>
-<li>payload : it contains information that can be used by server or client side or different parties.
-<br /></li>
+<li>payload : it contains information that can be used by server or client side or different parties.</li>
 </ul>
 
 <p>Common payload</p>
@@ -149,7 +148,7 @@ var signature = atob(arr[2]);
     base64UrlEncode(payload),
     secret)
 
-// here HMACSHA256 algorithm is used to encrypt 
+// here HMACSHA256 algorithm is used to encrypt
 and secret is key (string)
 </code></pre>
 
@@ -185,9 +184,9 @@ localStorage.setItem('myCat', 'Tom');
 
 <p>Everytime we send API request, we send this JWT stored in localStorage via HEADERS or FORMs.</p>
 
-<p>Storing in browser makes web app stateless but if this JWT is stolen or shared,  Unintended user can access the data.</p>
+<p>Storing in browser makes web app stateless but if this JWT is stolen or shared, Unintended user can access the data.</p>
 
-<p>Stealing localstorage data is easy with XSS attack. Suppose we have a form that takes the input and rendered that input on ours Users browser. Say a hero hacker input a javascript  such as below into our input form</p>
+<p>Stealing localstorage data is easy with XSS attack. Suppose we have a form that takes the input and rendered that input on ours Users browser. Say a hero hacker input a javascript such as below into our input form</p>
 
 <pre><code>&lt;script&gt;
     var data = window.localStorage();
@@ -241,7 +240,7 @@ localStorage.setItem('myCat', 'Tom');
     ss: &quot;api.mjt.com.np&quot;, //issuer
     user: &quot;emp3ror&quot;, //username
     exp : 1552622839, //expiry time
-    grp : [], //groups or actions or 
+    grp : [], //groups or actions or
     XcrsfToken : &quot;a good token&quot;
 }
 </code></pre>
@@ -249,8 +248,7 @@ localStorage.setItem('myCat', 'Tom');
 <p>We can take this <code>XcrsfToken</code> toke with javascript and send by adding to form or header. This can&rsquo;t be done while using <code>HttpOnly</code> cookie as it can&rsquo;t be accessed by javascript.</p>
 
 <ul>
-<li>Note, Also this can be done by using extra request to api to get <code>XcrsfToken</code>
-<br /></li>
+<li>Note, Also this can be done by using extra request to api to get <code>XcrsfToken</code></li>
 </ul>
 
 <h2 id="a-name-accessunauthorizedkey-unauthorized-accessing-secret-key-of-jwt-a"><a name="accessUnauthorizedKey">Unauthorized accessing Secret key of JWT</a></h2>
@@ -291,6 +289,12 @@ function greatSignatureReturns (header,payload, secret) {
 <p>After writing this post, I did change some of my SECRET key used to create tokens :P</p>
 
 <p>Another way might be using different secret for different user, does this avoids stateless nature of JWT?</p>
+
+<h2 id="cons">cons</h2>
+
+<p>In a senario where it is required to revoke the token of user, JWT fails. Since JWT is not stored in server side, its hard to revoke the token.</p>
+
+<hr>
 
 <p>Well, Here are few of the things I experienced with <code>JWT</code>, anything to add up, please mention it in the comment below</p>
 
