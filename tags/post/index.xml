@@ -6,10 +6,19 @@
     <description>Recent content in Post on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Aug 2018 18:34:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 09:42:47 +0000</lastBuildDate>
     
 	<atom:link href="http://mjt.com.np/tags/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Running posts</title>
+      <link>http://mjt.com.np/posts/run/</link>
+      <pubDate>Tue, 16 Apr 2019 09:42:47 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/posts/run/</guid>
+      <description>From coding to online gaming</description>
+    </item>
     
     <item>
       <title>My Posts</title>

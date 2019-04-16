@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://mjt.com.np/posts/run/</loc>
+    <lastmod>2019-04-16T09:42:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/posts/run/ktm-trail-series/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/posts/run/my-runnig-goals/</loc>
     <lastmod>2019-04-05T03:47:28+00:00</lastmod>
   </url>
@@ -61,13 +71,13 @@
   
   <url>
     <loc>http://mjt.com.np/</loc>
-    <lastmod>2019-04-05T03:47:28+00:00</lastmod>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mjt.com.np/tags/post/</loc>
-    <lastmod>2018-08-30T18:34:02+00:00</lastmod>
+    <lastmod>2019-04-16T09:42:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -78,8 +88,14 @@
   </url>
   
   <url>
+    <loc>http://mjt.com.np/tags/race/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/tags/run/</loc>
-    <lastmod>2019-04-05T03:47:28+00:00</lastmod>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -98,6 +114,12 @@
   <url>
     <loc>http://mjt.com.np/tags/token/</loc>
     <lastmod>2019-03-15T05:59:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/trails/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
