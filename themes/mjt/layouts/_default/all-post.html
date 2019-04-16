@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main class="container listpage">
+  <div>
+    <header>
+      <h2>{{.Title}}</h2>
+    </header>
+    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+    <div class="listDesc">{{.Content}}</div>
+  </div>
+  <!-- Ranges through content/posts/*.md -->
+  
+    {{range .Site.RegularPages}}
+        {{ if not (.Draft)}}
+            {{ .Render "summary" }}
+        {{ end }}
+    {{ end }}
+  
+  
+</main>
+{{ end }}
