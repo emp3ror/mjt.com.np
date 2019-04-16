@@ -10,32 +10,7 @@
   <!-- Ranges through content/posts/*.md -->
   {{ range.Pages }}
   {{ if not (.Draft)}}
-  <div class="row">
-    <div class="col">
-      <div class="card mb-5">
-        <div class="card-header">
-          <a href="{{.Permalink}}">
-            <h1>
-              {{.Title}}
-            </h1>
-          </a>
-          <div class="date">{{.Date.Format "2006-01-02"}}</div>
-        </div>
-        <div class="card-body">
-          <p>
-            {{ .Summary | safeHTML}}
-
-            {{ if .Truncated }}
-            <!-- This <s> includes a read more link, but only if the summary is truncated... -->
-            <span>
-              <a href="{{ .RelPermalink }}">Read More…</a>
-            </span>
-            {{ end }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ .Render "summary" }}
   {{ end }}
   {{ end }}
 </main>
