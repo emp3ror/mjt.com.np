@@ -5,9 +5,6 @@ tags: ["Post"]
 draft: false
 author: "admin"
 
-menu:
-  main:
-    name: "Running"
 ---
 
 All about my running
