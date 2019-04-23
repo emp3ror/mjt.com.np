@@ -1,10 +1,13 @@
-+++
-title = "My Posts"
-date = "2018-08-30T18:34:02+00:00"
-tags = ["Post"]
-draft = false
-author = "admin"
-layout = "all-post"
-+++
+---
+title: "My Posts"
+date: "2018-08-30T18:34:02+00:00"
+tags: ["Post"]
+draft: false
+author: "admin"
+layout: "all-post"
+menu:
+  main:
+    name: "All Posts"
+---
 
 posts
