@@ -38,6 +38,9 @@ Preparing draft for presentation on Frontend Reunited
 
 ### Components
 
+- tables
+- charts
+
 ### Service layers
 
 - intercepting APIs
