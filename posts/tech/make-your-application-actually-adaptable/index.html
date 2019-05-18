@@ -5,21 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Make your application actually adaptable - MJT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content=" Preparing draft for presentation on Frontend Reunited
-My History of javascript  Slide/carousel Form validation in Client side  Password didnt match Password length, must contains  Username already used using api
- there comes templating
- handlebars  whole world is now on frontend with lots of serverless facilities
-  Using task runners  gulp/grup Webpack  little bit about es6 features (mostly of import)   Patterns  seperation of concerns feature based  Scss  Variables mixins  Components  tables charts  Service layers  intercepting APIs  Response controlled Component  Form builder Animations Pop ups  Publish Subscribe pattern  Redux  " />
+    <meta name="description" content="Preparing draft for presentation on Frontend Reunited
+Hi I am manish Jung thapa, I will be sharing my experience on this topic, adopting with change: Frontend Architecture and patterns
+My History of javascript As a user My early experience was when Javascript used to be primitive . Image slider was the only cool thing. Password validation. There was a change in behavior, checking Username or email already exists or not was done without refreshing a page, AJAX ." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
     <meta property="og:url" content="http://mjt.com.np//posts/tech/make-your-application-actually-adaptable/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Make your application actually adaptable" />
-    <meta property="og:description" content=" Preparing draft for presentation on Frontend Reunited
-My History of javascript  Slide/carousel Form validation in Client side  Password didnt match Password length, must contains  Username already used using api
- there comes templating
- handlebars  whole world is now on frontend with lots of serverless facilities
-  Using task runners  gulp/grup Webpack  little bit about es6 features (mostly of import)   Patterns  seperation of concerns feature based  Scss  Variables mixins  Components  tables charts  Service layers  intercepting APIs  Response controlled Component  Form builder Animations Pop ups  Publish Subscribe pattern  Redux  " />
+    <meta property="og:description" content="Preparing draft for presentation on Frontend Reunited
+Hi I am manish Jung thapa, I will be sharing my experience on this topic, adopting with change: Frontend Architecture and patterns
+My History of javascript As a user My early experience was when Javascript used to be primitive . Image slider was the only cool thing. Password validation. There was a change in behavior, checking Username or email already exists or not was done without refreshing a page, AJAX ." />
     <link rel="canonical" href="http://mjt.com.np/posts/tech/make-your-application-actually-adaptable/" />
 
     <link
@@ -115,79 +111,93 @@ My History of javascript  Slide/carousel Form validation in Client side  Passwor
 
 <p>Preparing draft for presentation on Frontend Reunited</p>
 
+<p>Hi I am manish Jung thapa, I will be sharing my experience on this topic, adopting with change: Frontend Architecture and patterns</p>
+
 <h2 id="my-history-of-javascript">My History of javascript</h2>
 
-<ul>
-<li>Slide/carousel</li>
-<li>Form validation in Client side
+<p>As a user My early experience was when Javascript used to be primitive . Image slider was the only cool thing. Password validation.
+There was a change in behavior, checking Username or email already exists or not was done without refreshing a page, AJAX .
+Web is evolving.
+whole web ecosytem took a leap, now its more like web app than just websites. It grew larger larger on both capabilities and complexities.
+Different concepts and tools arising to solve different problems and complexites.</p>
+
+<h2 id="js-modules">JS Modules</h2>
+
+<p>A lot of old patterns fall away with new modules on ES 6
+Two patterns here in this code snippet</p>
 
 <ul>
-<li>Password didnt match</li>
-<li>Password length, must contains</li>
-</ul></li>
-
-<li><p>Username already used using api</p></li>
-
-<li><p>there comes templating</p>
-
-<ul>
-<li>handlebars</li>
-</ul></li>
-
-<li><p>whole world is now on frontend with lots of serverless facilities</p></li>
+<li>Immedietly invoked function expression</li>
+<li>wrapped inside so that nothing escapes accidentally to window or global scope</li>
+<li>use of string literal &ldquo;USE Strict&rdquo; makes javascript into the strict mode which can reduce the number of strange errors/strange behavior that js brings and sometimes even leads to performance boost</li>
 </ul>
 
-<h2 id="using-task-runners">Using task runners</h2>
+<p>Es 6</p>
 
 <ul>
-<li>gulp/grup</li>
-<li>Webpack
-
-<ul>
-<li>little bit about es6 features (mostly of import)</li>
-</ul></li>
+<li>No more IFFEs</li>
+<li>any file with .js is now a module</li>
+<li>nothing goes to global scope unless we explicitly try to put it there by going to the widow object</li>
+<li>not required use strict declaration anymore because modules are by default interpreted and executed as in strict mode</li>
 </ul>
 
-<h2 id="patterns">Patterns</h2>
+<p>using export
+We can use <code>export</code> to export varibles, functions, class and declare default from the module</p>
+
+<p>Similarly we can use <code>import</code> to import module and import variables, functions, class from modules</p>
+
+<p>Also Import creates immutable bindings</p>
+
+<h2 id="components">Components</h2>
+
+<p>Concept of components</p>
 
 <ul>
-<li>seperation of concerns</li>
-<li>feature based</li>
+<li>One component should focus on one section of the UI.</li>
+<li>One component shouldn’t access another’s html directly.</li>
+<li>The component encapsulates its html, css and javascript.</li>
+<li>Each component has some way to interact with others.</li>
 </ul>
 
-<h3 id="scss">Scss</h3>
+<p>This approach has many advantages. It aligns with Single Responsibility Principle, so we have good separation of concerns, which in turn makes debugging easier.</p>
+
+<p>Due to these advantages every major frameworklike React, Vue, Angular uses this.</p>
+
+<p>lets talk about reusable components, lets create a table and call it Datatablex than can be reuse</p>
+
+<p>Feature of data table</p>
 
 <ul>
-<li>Variables</li>
-<li>mixins</li>
+<li>sortable</li>
+<li>index</li>
+<li>filter</li>
+<li>pagination</li>
 </ul>
 
-<h3 id="components">Components</h3>
+<h2 id="structuring-the-modules">Structuring the modules</h2>
 
-<ul>
-<li>tables</li>
-<li>charts</li>
-</ul>
+<h4 id="structuring-the-files">structuring the files</h4>
 
-<h3 id="service-layers">Service layers</h3>
+<p>Sturcturing the modules in different folders and sub folders plays vital role in understandability and shows objective of module at glace. We can aline structuring files with concept of MV* pattern. Keypoint I take considering while stucturing are, separation of concerns and feature based&hellip;. like, service layers, routes/views, components, etc and each component has its own functionaly and is self contained</p>
 
-<ul>
-<li>intercepting APIs</li>
-</ul>
+<h2 id="building-modules">Building Modules</h2>
 
-<h3 id="response-controlled-component">Response controlled Component</h3>
+<p>Strange situation with javascript is, ES 6 defined modules and syntax is awesome but there&rsquo;s not a single environemnt out there that natively does module loading, so theres no browsers widely used that natively supports import statements&hellip;.
+Therefore we have to use one of the build tools that analyse the dependencies, go through source code, to import statements and follow them and create bundles into single or multiple files</p>
 
-<ul>
-<li>Form builder</li>
-<li>Animations</li>
-<li>Pop ups</li>
-</ul>
+<p>Toolchain can impact performance</p>
 
-<h3 id="publish-subscribe-pattern">Publish Subscribe pattern</h3>
+<p>Making webpack to build for development and production can help developers. like while developing, we can allow logs to show and in production to have all codes minified and console logs removed, we can set different api paths</p>
 
-<ul>
-<li>Redux</li>
-</ul>
+<h2 id="css-scss">CSS / SCSS</h2>
+
+<p>Even not being a better desinger, a frontend developer can&rsquo;t be out of css. Lets discuss a little about css and scss.</p>
+
+<p>-making a class with specific properties. Like btn class can have a property, in general buttons must have, and btn-warning can have specific property that resembles its nature</p>
+
+<p>Scss is better tool for frontenders. Best thing I like about it is variables. Say we have a product and uses a primary color red and its variance everywhere like in background it uses 50% of red, in shadow 80% of red, and highlighted with say 20% of red. so in css when we have to change it, we have to go through each and change it, or search and replace all. but with scss variable, we can change it at once and reuse everywhere</p>
+
+<p>Another amazing feature of scss is Mixins, its functions for css.</p>
 
         </article>
       </div>

@@ -17,11 +17,9 @@
       <pubDate>Tue, 14 May 2019 01:39:31 +0000</pubDate>
       
       <guid>http://mjt.com.np/posts/tech/make-your-application-actually-adaptable/</guid>
-      <description> Preparing draft for presentation on Frontend Reunited
-My History of javascript  Slide/carousel Form validation in Client side  Password didnt match Password length, must contains  Username already used using api
- there comes templating
- handlebars  whole world is now on frontend with lots of serverless facilities
-  Using task runners  gulp/grup Webpack  little bit about es6 features (mostly of import)   Patterns  seperation of concerns feature based  Scss  Variables mixins  Components  tables charts  Service layers  intercepting APIs  Response controlled Component  Form builder Animations Pop ups  Publish Subscribe pattern  Redux  </description>
+      <description>Preparing draft for presentation on Frontend Reunited
+Hi I am manish Jung thapa, I will be sharing my experience on this topic, adopting with change: Frontend Architecture and patterns
+My History of javascript As a user My early experience was when Javascript used to be primitive . Image slider was the only cool thing. Password validation. There was a change in behavior, checking Username or email already exists or not was done without refreshing a page, AJAX .</description>
     </item>
     
   </channel>
