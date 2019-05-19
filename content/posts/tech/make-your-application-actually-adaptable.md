@@ -2,7 +2,7 @@
 title = "Make your application actually adaptable"
 date = "2019-05-14T01:39:31Z"
 tags = ["javascript","presentation"]
-draft = false
+draft = true
 author = "admin"
 +++
 
@@ -47,7 +47,7 @@ Concept of components
 
 - One component should focus on one section of the UI.
 - One component shouldn’t access another’s html directly.
-- The component encapsulates its html, css and javascript.
+- The component encapsulates its Output(html), Style (css) and Functionaly (javascript).
 - Each component has some way to interact with others.
 
 This approach has many advantages. It aligns with Single Responsibility Principle, so we have good separation of concerns, which in turn makes debugging easier.
