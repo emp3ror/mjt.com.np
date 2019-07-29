@@ -6,26 +6,35 @@
     <description>Recent content in Tags on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Mar 2019 14:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 15:07:51 +0000</lastBuildDate>
     
 	<atom:link href="http://mjt.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Data Mining</title>
-      <link>http://mjt.com.np/tags/data-mining/</link>
-      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      <title>linux</title>
+      <link>http://mjt.com.np/tags/linux/</link>
+      <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/data-mining/</guid>
+      <guid>http://mjt.com.np/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Jwt</title>
-      <link>http://mjt.com.np/tags/jwt/</link>
-      <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
+      <title>partition</title>
+      <link>http://mjt.com.np/tags/partition/</link>
+      <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/jwt/</guid>
+      <guid>http://mjt.com.np/tags/partition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>http://mjt.com.np/tags/shell/</link>
+      <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/shell/</guid>
       <description></description>
     </item>
     
@@ -39,24 +48,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>http://mjt.com.np/tags/r/</link>
-      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Race</title>
-      <link>http://mjt.com.np/tags/race/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/race/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Run</title>
       <link>http://mjt.com.np/tags/run/</link>
       <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
@@ -66,16 +57,52 @@
     </item>
     
     <item>
-      <title>Test</title>
-      <link>http://mjt.com.np/tags/test/</link>
-      <pubDate>Thu, 14 Mar 2019 16:20:47 +0000</pubDate>
+      <title>race</title>
+      <link>http://mjt.com.np/tags/race/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/test/</guid>
+      <guid>http://mjt.com.np/tags/race/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Token</title>
+      <title>trails</title>
+      <link>http://mjt.com.np/tags/trails/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/trails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Mining</title>
+      <link>http://mjt.com.np/tags/data-mining/</link>
+      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/data-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://mjt.com.np/tags/r/</link>
+      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jwt</title>
+      <link>http://mjt.com.np/tags/jwt/</link>
+      <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
+      
+      <guid>http://mjt.com.np/tags/jwt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>token</title>
       <link>http://mjt.com.np/tags/token/</link>
       <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
       
@@ -84,11 +111,11 @@
     </item>
     
     <item>
-      <title>Trails</title>
-      <link>http://mjt.com.np/tags/trails/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      <title>test</title>
+      <link>http://mjt.com.np/tags/test/</link>
+      <pubDate>Thu, 14 Mar 2019 16:20:47 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/trails/</guid>
+      <guid>http://mjt.com.np/tags/test/</guid>
       <description></description>
     </item>
     

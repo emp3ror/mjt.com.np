@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Resize or new partition for /var - MJT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="why? Thought /var wouldnt need more than 5G of space, so I foolishly created partition of only 5G and set /var to it. You know when you got new ssd with only 256G space, you try to act cool and think you can optimize but the thing is I am too lazy to optimize everytime :sweat_smile: :sweat_smile: I checked my old hard disk the HDD and found out, /var was given 21G space and it was 15G filled already&hellip; Then my adrenaline rush of need to resize came strong and I am changing this state while writting this blog :sweat_smile: , if something goes wrong, I would be needing bootable pendrive :sweat_smile: :sweat_smile:" />
+    <meta name="author" content="MJT" />
+    <meta name="keywords" content="" />
+    <meta property="og:url" content="http://mjt.com.np//posts/tech/resize-or-new-partition/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Resize or new partition for /var" />
+    <meta property="og:description" content="why? Thought /var wouldnt need more than 5G of space, so I foolishly created partition of only 5G and set /var to it. You know when you got new ssd with only 256G space, you try to act cool and think you can optimize but the thing is I am too lazy to optimize everytime :sweat_smile: :sweat_smile: I checked my old hard disk the HDD and found out, /var was given 21G space and it was 15G filled already&hellip; Then my adrenaline rush of need to resize came strong and I am changing this state while writting this blog :sweat_smile: , if something goes wrong, I would be needing bootable pendrive :sweat_smile: :sweat_smile:" />
+    <link rel="canonical" href="http://mjt.com.np/posts/tech/resize-or-new-partition/" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
+    ></script>
+  </body>
+</html>
+
+<div class="wrapper base">
+  <nav class="navbar navbar-expand-sm header fixed-top">
+  
+  <a class="navbar-brand" href="/">MJT</a>
+
+  
+  
+
+  <ul class="navbar-nav">
+    
+    
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/posts/">
+        
+        <span>All Posts</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/posts/run/">
+        
+        <span>My Running posts</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/posts/tech/">
+        
+        <span>Tech</span>
+      </a>
+    </li>
+    
+    
+    
+  </ul>
+</nav>
+
+<div class="container " role="main">
+    <div class="row">
+    
+    
+
+<div class="container single">
+  <div class="card col">
+    <div class="card-body">
+      <h1>Resize or new partition for /var</h1>
+      <div class="date">
+        2019-07-28
+      </div>
+      <hr />
+      <div class="content">
+        <article class="post-content">
+          
+
+<h3 id="why">why?</h3>
+
+<p>Thought <code>/var</code> wouldnt need more than 5G of space, so I foolishly created partition of only 5G and set <code>/var</code> to it. You know when you got new <code>ssd</code> with only 256G space, you try to act cool and think you can optimize but the thing is I am too lazy to optimize everytime 😅 😅 I checked my old hard disk <code>the HDD</code> and found out, <code>/var</code> was given <code>21G</code> space and it was <code>15G</code> filled already&hellip; Then my adrenaline rush of need to resize came strong and I am changing this state while writting this blog 😅 , if something goes wrong, I would be needing bootable pendrive <span class="emojis"> 😅 😅 </span></p>
+
+<h3 id="var">/var</h3>
+
+<p><code>/var</code> is a standard subdirectory of the root directory in Linux and other Unix-like operating systems that contains files to which the system writes data during the course of its operation.
+    - source <a href="http://www.linfo.org/var.html">http://www.linfo.org/var.html</a></p>
+
+<h3 id="lets-resize">Lets resize</h3>
+
+<p>Steps</p>
+
+<pre><code>// list available partitions
+$ df -h 
+</code></pre>
+
+<p>Now lets delete the increase the partition, we will use <code>fdisk</code> to pseudo-delete the partition without writing it to disk then increase the partition size and write it to the disk.</p>
+
+<pre><code>$ sudo fdisk /dev/nvme0n1
+
+// press `p` to select partition, `d` to delete it and `n` to create new partition with new size
+</code></pre>
+
+<p>Oh NOOOOOOOO moment</p>
+
+<p><img src="/img/screenshot-partition.png" alt="Medium image" /></p>
+
+<p>Partition I am tring to remove is <code>/nvme0n1p6</code> and <code>/nvm0n1p9</code> has the free space I am trying to extend to, Since <code>sector Ending</code> of p6 partition was not adjacent to <code>sector begining</code> of p9 partition, it does not allow to resize partition p6 to grow more than <code>5G</code> space 😑</p>
+
+<h3 id="fallback">Fallback</h3>
+
+<p>I moved every thing of <code>/var</code> to new partition and rewrite <code>/etc/fstab</code></p>
+
+<pre><code>// mount the partition to /mnt
+$ sudo mount /dev/nvme0np19 /mnt
+
+// copy every thing to /mnt =&gt; new partition p9
+$ cp -apx /var/* /mnt
+
+// check uuid of partition
+$ ls -l /dev/disk/by-uuid/
+
+//  modify /etc/fstab
+$ sudo leafpad /etc/fstab
+</code></pre>
+
+<p>Here is screenshot of my modified <code>/etc/fstab</code>
+<img src="/img/screenshot-fstab.png" alt="Medium image" /></p>
+
+<p>lets reboot and see if it works, if it does not work, I will have to uncomment uuid of previous partition on <code>fstab</code> with live usb boot <span class="emojis"> 😅 😅 </span></p>
+
+<pre><code>$ sudo reboot
+</code></pre>
+
+<p>voila!! It works and smooth</p>
+
+<h3 id="next">Next</h3>
+
+<p>I have given root <code>/</code> only 10G and my previous <code>the HDD</code> had 50G of space and 21G was filled, So it needs change some modification too. I will write about it in new post</p>
+
+<div class="alert alert-warning">
+Thanks for reading! if you have better suggestion or just Hi in comment <span class="emojis"> 😅 😅 </span>
+</div>
+
+        </article>
+      </div>
+    </div>
+
+    <hr />
+    <div
+      class="fb-like"
+      data-href="http://mjt.com.np//posts/tech/resize-or-new-partition/"
+      data-layout="standard"
+      data-action="like"
+      data-show-faces="true"
+    ></div>
+    <div
+      class="fb-comments"
+      data-href="http://mjt.com.np//posts/tech/resize-or-new-partition/"
+      data-numposts="5"
+    ></div>
+  </div>
+</div>
+
+    
+    
+    
+    </div>
+</div>
+</div>
+
+<footer class="page-footer font-small special-color-dark pt-4" id="footer">
+  
+  <div class="container">
+    
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a
+          class="btn-floating btn-fb mx-1"
+          href="https://www.facebook.com/manish.j.thapa"
+        >
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="btn-floating btn-tw mx-1"
+          href="https://twitter.com/mjt_emp3r0r"
+        >
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a
+          class="btn-floating btn-li mx-1"
+          href="https://www.linkedin.com/in/emp3ror/"
+        >
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="btn-floating btn-github mx-1"
+          href="https://github.com/emp3ror"
+        >
+          <i class="fab fa-github"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="btn-floating mx-1"
+          href="https://www.instagram.com/mjt_emp3ror/"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+  
+
+  
+  <div class="footer-copyright text-center py-3">
+    <i class="fas fa-running"></i>
+    <a href="http://mjt.com.np"> MJT</a>
+    <i class="fas fa-running"></i>
+  </div>
+  
+</footer>
+
+
+
+
+<script>
+  
+  $("table").addClass("table");
+  $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
+
+</script>
+</body>
+</html>

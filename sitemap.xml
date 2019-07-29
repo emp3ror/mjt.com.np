@@ -3,8 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://mjt.com.np/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/posts/tech/resize-or-new-partition/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/linux/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/partition/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/shell/</loc>
+    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/posts/run/</loc>
     <lastmod>2019-04-16T09:42:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/post/</loc>
+    <lastmod>2019-04-16T09:42:47+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,8 +54,32 @@
   </url>
   
   <url>
+    <loc>http://mjt.com.np/tags/run/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/race/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/trails/</loc>
+    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/posts/run/my-runnig-goals/</loc>
     <lastmod>2019-04-05T03:47:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/data-mining/</loc>
+    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -23,13 +88,37 @@
   </url>
   
   <url>
+    <loc>http://mjt.com.np/tags/r/</loc>
+    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/posts/tech/all-about-jwt/</loc>
     <lastmod>2019-03-15T05:59:53+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://mjt.com.np/tags/jwt/</loc>
+    <lastmod>2019-03-15T05:59:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/token/</loc>
+    <lastmod>2019-03-15T05:59:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://mjt.com.np/posts/tech/wwktm-2018/</loc>
     <lastmod>2019-03-14T16:20:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mjt.com.np/tags/test/</loc>
+    <lastmod>2019-03-14T16:20:47+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -54,72 +143,6 @@
   
   <url>
     <loc>http://mjt.com.np/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/data-mining/</loc>
-    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/jwt/</loc>
-    <lastmod>2019-03-15T05:59:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/</loc>
-    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/post/</loc>
-    <lastmod>2019-04-16T09:42:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/r/</loc>
-    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/race/</loc>
-    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/run/</loc>
-    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/</loc>
-    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/test/</loc>
-    <lastmod>2019-03-14T16:20:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/token/</loc>
-    <lastmod>2019-03-15T05:59:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mjt.com.np/tags/trails/</loc>
-    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
