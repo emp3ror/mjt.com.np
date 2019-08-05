@@ -2,4 +2,4 @@
   HUGO_VERSION = "0.53"
 
 [context.deploy-preview]
-  command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --i18n-warnings"
+  command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"

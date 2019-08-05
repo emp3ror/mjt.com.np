@@ -1,4 +1,4 @@
-baseURL = "./"
+baseURL = "http://mjt.com.np/"
 languageCode = "en-us"
 title = "MJT"
 theme = "mjt"
