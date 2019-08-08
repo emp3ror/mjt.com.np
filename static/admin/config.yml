@@ -23,4 +23,4 @@ collections:
             label_singular: 'Tweets'
             widget: "list"
             fields: 
-              - { label: 'Write tweets', name: 'tweets name', widget: 'markdown', hint: 'Write tweets for tweets widget'}
+              - { label: 'Write tweets', name: 'tweet', widget: 'markdown', hint: 'Write tweets for tweets widget'}
