@@ -24,3 +24,30 @@ collections:
             widget: "list"
             fields: 
               - { label: 'Write tweets', name: 'tweet', widget: 'markdown', hint: 'Write tweets for tweets widget'}
+      
+      - name: 'circular3blog'
+        label: 'Section with 3 circle'
+        file: 'data/homepage/section-circular.yml'
+        description: 'section with 3 circular block'
+        fields: 
+          - { label: 'title', name: 'title', widget: 'string', hint: "title"}
+          - name: 'circleBlock'
+            label: 'Circle Blocks'
+            widget: "list"
+            fields: 
+              - { label: 'title', name: 'title', widget: 'string', hint: "title"}
+              - { label: 'Write Desc', name: 'desc', widget: 'markdown', hint: 'Write desc'}
+          - name: 'callForActionBtn'
+            label: 'call for action buttons'
+            fields: 
+              - name: 'btn1'
+                label: 'button 1'
+                fields: 
+                  - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
+                  - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}
+
+              - name: 'btn2'
+                label: 'button 2'
+                fields: 
+                  - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
+                  - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}
