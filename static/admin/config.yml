@@ -39,15 +39,18 @@ collections:
               - { label: 'Write Desc', name: 'desc', widget: 'markdown', hint: 'Write desc'}
           - name: 'callForActionBtn'
             label: 'call for action buttons'
+            widget: "object"
             fields: 
               - name: 'btn1'
                 label: 'button 1'
+                widget: "object"
                 fields: 
                   - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
                   - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}
 
               - name: 'btn2'
                 label: 'button 2'
+                widget: "object"
                 fields: 
                   - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
                   - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}
