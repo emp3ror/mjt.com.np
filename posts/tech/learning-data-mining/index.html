@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="learning data mining
 Nature of data After observation, we can get 3 types of data
- Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
- Ordinal : Rank, satisfactions, mean may not be good&hellip;
- Interval/Ratio : Measure, intervals like age, time, couts
+  Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
+  Ordinal : Rank, satisfactions, mean may not be good&hellip;
+  Interval/Ratio : Measure, intervals like age, time, couts
      Customer Age Sex Groceries Chocobars Type Satisfied Bulk     1 18 Male Rs 140 2 Milk 1 2   1 23 Female Rs 270 2 Dark 3 3   1 21 Female Rs 160 2 White 2 4   1 27 Male Rs 180 2 Milk 1 2     Type is Nominal and can be displayed in pie chart or bar chart Satisfied is Ordinal and can&rsquo;t be displayed in pie chart." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
-    <meta property="og:url" content="http://mjt.com.np//posts/tech/learning-data-mining/" />
+    <meta property="og:url" content="//posts/tech/learning-data-mining/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Learning Data Mining " />
     <meta property="og:description" content="learning data mining
 Nature of data After observation, we can get 3 types of data
- Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
- Ordinal : Rank, satisfactions, mean may not be good&hellip;
- Interval/Ratio : Measure, intervals like age, time, couts
+  Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
+  Ordinal : Rank, satisfactions, mean may not be good&hellip;
+  Interval/Ratio : Measure, intervals like age, time, couts
      Customer Age Sex Groceries Chocobars Type Satisfied Bulk     1 18 Male Rs 140 2 Milk 1 2   1 23 Female Rs 270 2 Dark 3 3   1 21 Female Rs 160 2 White 2 4   1 27 Male Rs 180 2 Milk 1 2     Type is Nominal and can be displayed in pie chart or bar chart Satisfied is Ordinal and can&rsquo;t be displayed in pie chart." />
-    <link rel="canonical" href="http://mjt.com.np/posts/tech/learning-data-mining/" />
+    <link rel="canonical" href="/posts/tech/learning-data-mining/" />
 
     <link
       rel="stylesheet"
@@ -36,12 +36,14 @@ Nature of data After observation, we can get 3 types of data
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body>
@@ -52,6 +54,18 @@ Nature of data After observation, we can get 3 types of data
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
     ></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
@@ -78,9 +92,9 @@ Nature of data After observation, we can get 3 types of data
     
     
     <li class="nav-item">
-      <a class="nav-link" href="/posts/run/">
+      <a class="nav-link" href="/posts/">
         
-        <span>My Running posts</span>
+        <span>My Posts</span>
       </a>
     </li>
     
@@ -113,26 +127,24 @@ Nature of data After observation, we can get 3 types of data
       <hr />
       <div class="content">
         <article class="post-content">
-          
-
-<p>learning data mining</p>
-
+          <p>learning data mining</p>
 <h2 id="nature-of-data">Nature of data</h2>
-
 <p>After observation, we can get 3 types of data</p>
-
 <ul>
-<li><p>Nominal :
+<li>
+<p>Nominal :
 which has label or tags, cant take mean, we can take percentage (frequecy) though
-eg, sex, taste</p></li>
-
-<li><p>Ordinal :
-Rank, satisfactions, mean may not be good&hellip;</p></li>
-
-<li><p>Interval/Ratio :
-Measure, intervals like age, time, couts</p></li>
+eg, sex, taste</p>
+</li>
+<li>
+<p>Ordinal :
+Rank, satisfactions, mean may not be good&hellip;</p>
+</li>
+<li>
+<p>Interval/Ratio :
+Measure, intervals like age, time, couts</p>
+</li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -146,7 +158,6 @@ Measure, intervals like age, time, couts</p></li>
 <th align="right">Bulk</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="right">1</td>
@@ -158,7 +169,6 @@ Measure, intervals like age, time, couts</p></li>
 <td align="right">1</td>
 <td align="right">2</td>
 </tr>
-
 <tr>
 <td align="right">1</td>
 <td align="right">23</td>
@@ -169,7 +179,6 @@ Measure, intervals like age, time, couts</p></li>
 <td align="right">3</td>
 <td align="right">3</td>
 </tr>
-
 <tr>
 <td align="right">1</td>
 <td align="right">21</td>
@@ -180,7 +189,6 @@ Measure, intervals like age, time, couts</p></li>
 <td align="right">2</td>
 <td align="right">4</td>
 </tr>
-
 <tr>
 <td align="right">1</td>
 <td align="right">27</td>
@@ -193,21 +201,15 @@ Measure, intervals like age, time, couts</p></li>
 </tr>
 </tbody>
 </table>
-
 <ul>
 <li><code>Type</code> is <code>Nominal</code> and can be displayed in pie chart or bar chart</li>
 <li><code>Satisfied</code> is <code>Ordinal</code> and can&rsquo;t be displayed in pie chart. The difference in satisfaction and unsatisfaction feeling can be high so mean may not be preferred.</li>
-<li><code>Age</code> is <code>Interval</code> can be displayed in histogram
-<br /></li>
+<li><code>Age</code> is <code>Interval</code> can be displayed in histogram</li>
 </ul>
-
 <p>Good video to watch on youtube about nature of data <a href="https://youtu.be/hZxnzfnt5v8">https://youtu.be/hZxnzfnt5v8</a></p>
-
-<h2 id="classification-trees">Classification - trees</h2>
-
+<h2 id="classification---trees">Classification - trees</h2>
 <p>Also known as decision tree
 Divide and conquer</p>
-
 <h2 id="naive-bayes">Naive Bayes</h2>
 
         </article>
@@ -217,14 +219,14 @@ Divide and conquer</p>
     <hr />
     <div
       class="fb-like"
-      data-href="http://mjt.com.np//posts/tech/learning-data-mining/"
+      data-href="//posts/tech/learning-data-mining/"
       data-layout="standard"
       data-action="like"
       data-show-faces="true"
     ></div>
     <div
       class="fb-comments"
-      data-href="http://mjt.com.np//posts/tech/learning-data-mining/"
+      data-href="//posts/tech/learning-data-mining/"
       data-numposts="5"
     ></div>
   </div>
@@ -316,7 +318,8 @@ if (!doNotTrack) {
 
 
 <script>
-  
+  <script async src="https://numb.avinash.com.np/tracker.js" data-bisl-server="https://numb.avinash.com.np" data-bisl-domain-id="7f120a90-f812-11ea-b80e-639b194090cd"></script>
+  //document.querySelector("table").classList.add("table");
   $("table").addClass("table");
   $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
 

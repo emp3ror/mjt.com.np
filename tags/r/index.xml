@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on MJT</title>
-    <link>http://mjt.com.np/tags/r/</link>
+    <link>/tags/r/</link>
     <description>Recent content in R on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Mar 2019 14:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 08:29:32 +0000</lastBuildDate>
     
-	<atom:link href="http://mjt.com.np/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learning Data Mining </title>
-      <link>http://mjt.com.np/posts/tech/learning-data-mining/</link>
+      <link>/posts/tech/learning-data-mining/</link>
       <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/learning-data-mining/</guid>
+      <guid>/posts/tech/learning-data-mining/</guid>
       <description>learning data mining
 Nature of data After observation, we can get 3 types of data
- Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
- Ordinal : Rank, satisfactions, mean may not be good&amp;hellip;
- Interval/Ratio : Measure, intervals like age, time, couts
+  Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
+  Ordinal : Rank, satisfactions, mean may not be good&amp;hellip;
+  Interval/Ratio : Measure, intervals like age, time, couts
      Customer Age Sex Groceries Chocobars Type Satisfied Bulk     1 18 Male Rs 140 2 Milk 1 2   1 23 Female Rs 270 2 Dark 3 3   1 21 Female Rs 160 2 White 2 4   1 27 Male Rs 180 2 Milk 1 2     Type is Nominal and can be displayed in pie chart or bar chart Satisfied is Ordinal and can&amp;rsquo;t be displayed in pie chart.</description>
     </item>
     

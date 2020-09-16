@@ -1,0 +1,56 @@
+backend:   
+  name: git-gateway   
+  branch: master # Branch to update (optional; defaults to master)
+  
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name : 'tweets'
+        label: 'Tweets'
+        file: 'data/tweets.yml'
+        description: 'Tweets to Show on Tweets widgets'
+        fields : 
+          - name: 'tweets'
+            label: 'Tweets'
+            label_singular: 'Tweets'
+            widget: "list"
+            fields: 
+              - { label: 'Write tweets', name: 'tweet', widget: 'markdown', hint: 'Write tweets for tweets widget'}
+      
+      - name: 'circular3blog'
+        label: 'Section with 3 circle'
+        file: 'data/homepage/section-circular.yml'
+        description: 'section with 3 circular block'
+        fields: 
+          - { label: 'title', name: 'title', widget: 'string', hint: "title"}
+          - name: 'circleBlock'
+            label: 'Circle Blocks'
+            widget: "list"
+            fields: 
+              - { label: 'title', name: 'title', widget: 'string', hint: "title"}
+              - { label: 'Write Desc', name: 'desc', widget: 'markdown', hint: 'Write desc'}
+          - name: 'callForActionBtn'
+            label: 'call for action buttons'
+            widget: "object"
+            fields: 
+              - name: 'btn1'
+                label: 'button 1'
+                widget: "object"
+                fields: 
+                  - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
+                  - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}
+
+              - name: 'btn2'
+                label: 'button 2'
+                widget: "object"
+                fields: 
+                  - { label: 'Title', name: 'title', widget: 'string', hint: "title"}
+                  - { label: 'Action Url', name: 'url', widget: 'string', hint: 'Write url'}

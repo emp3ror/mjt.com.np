@@ -9,12 +9,12 @@
 JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
-    <meta property="og:url" content="http://mjt.com.np//posts/tech/all-about-jwt/" />
+    <meta property="og:url" content="//posts/tech/all-about-jwt/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="All about JWT" />
     <meta property="og:description" content="JWT RFC7519 states:
 JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted." />
-    <link rel="canonical" href="http://mjt.com.np/posts/tech/all-about-jwt/" />
+    <link rel="canonical" href="/posts/tech/all-about-jwt/" />
 
     <link
       rel="stylesheet"
@@ -28,12 +28,14 @@ JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be t
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body>
@@ -44,6 +46,18 @@ JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be t
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
     ></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
@@ -70,9 +84,9 @@ JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be t
     
     
     <li class="nav-item">
-      <a class="nav-link" href="/posts/run/">
+      <a class="nav-link" href="/posts/">
         
-        <span>My Running posts</span>
+        <span>My Posts</span>
       </a>
     </li>
     
@@ -105,12 +119,8 @@ JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be t
       <hr />
       <div class="content">
         <article class="post-content">
-          
-
-<h2 id="jwt">JWT</h2>
-
+          <h2 id="jwt">JWT</h2>
 <p><a href="https://tools.ietf.org/html/rfc7519">RFC7519</a> states:</p>
-
 <p>JSON Web Token (JWT) is a compact, URL-safe means of representing
 claims to be transferred between two parties. The claims in a JWT
 are encoded as a JSON object that is used as the payload of a JSON
@@ -118,24 +128,17 @@ Web Signature (JWS) structure or as the plaintext of a JSON Web
 Encryption (JWE) structure, enabling the claims to be digitally
 signed or integrity protected with a Message Authentication Code
 (MAC) and/or encrypted.</p>
-
 <p>JWT has json structure when decoded which is well know by every web developer and contains minimal information required by frontend or client side to work on.</p>
-
 <ul>
 <li>JWT is an open standard</li>
 <li>JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.</li>
 <li>Does not require database</li>
 </ul>
-
 <h3 id="json-web-token-structure">JSON Web Token structure</h3>
-
 <p>While transmitting JWT its base64 encoded with 3 strings separated by &ldquo;.&rdquo;</p>
-
 <pre><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTUpUIiwiZ3JvdXBzIjpbXSwiZXhwIjoyMTMxMn0.qjUIVhO5XntQnWq_Au9BTUrM1ArBvfXyzY8PU7B2K1w
 </code></pre>
-
 <p>let&rsquo;s separate these 3 parts and decode each</p>
-
 <pre><code>//javascript
 var string = &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTUpUIiwiZ3JvdXBzIjpbXSwiZXhwIjoyMTMxMn0.qjUIVhO5XntQnWq_Au9BTUrM1ArBvfXyzY8PU7B2K1w&quot;;
 var arr = string.split(&quot;.&quot;);
@@ -149,14 +152,11 @@ var payload = atob(arr[1]);
 var signature = atob(arr[2]);
 //error decoding
 </code></pre>
-
 <ul>
 <li>header : it contains information about algorithm used while creating this JWT</li>
 <li>payload : it contains information that can be used by server or client side or different parties.</li>
 </ul>
-
 <p>Common payload</p>
-
 <pre><code>{
     iss: &quot;api.mjt.com.np&quot;, //issuer
     user: &quot;emp3ror&quot;, //username
@@ -164,15 +164,11 @@ var signature = atob(arr[2]);
     grp : [] //groups or actions or ....
 }
 </code></pre>
-
 <p>Since its json token, more information can be added but we need to keep in mind that it is transferred with each request so it does use bandwidth</p>
-
 <ul>
 <li>Signature : Its where takon is validated. It cannot be just decode with base64 :D</li>
 </ul>
-
 <p>It is encrypted as below</p>
-
 <pre><code>HMACSHA256(
     base64UrlEncode(header) + &quot;.&quot; +
     base64UrlEncode(payload),
@@ -181,11 +177,8 @@ var signature = atob(arr[2]);
 // here HMACSHA256 algorithm is used to encrypt
 and secret is key (string)
 </code></pre>
-
 <h4 id="how-validation-works-with-jwt">How validation works with JWT</h4>
-
 <p>Everytime Payload changes, it changes the signature String.</p>
-
 <pre><code>function greatSignatureReturns (header,payload, secret) {
     return HMACSHA256(
         base64UrlEncode(header) + &quot;.&quot; +
@@ -193,31 +186,19 @@ and secret is key (string)
         secret)
 }
 </code></pre>
-
 <p>So if we pass header, payload and our the SECRET keyword hidden somewhere in Server universe to &ldquo;greatSignatureReturns&rdquo; function, it returns the signature. We can validate this signature returned from function with that obtained from JWT, easy right?</p>
-
 <p>To create Signature it needs Secret code that has been used to create Signature originally. If Payload is tempered but doesnt have SECRET, then it will be easily caught. Below, I have written how to <a href="#accessUnauthorizedKey">get secret key from JWT, and make it more secure.</a></p>
-
 <h2 id="storing-jwt">Storing JWT</h2>
-
 <p>JWT doesn&rsquo;t need to be stored in the server Unlike sessions. Obviously it needs to be stored in client side dahhhh :D</p>
-
 <p>We have two options to store JWT in client side</p>
-
 <h4 id="using-browser-storage">Using browser storage</h4>
-
 <p>Modern browser provides API (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">sessionStorage</a> ) specific to the protocol of the domain. Its a key value pair, easy to use like below</p>
-
 <pre><code>window.localStorage.jwt = JWT;
 localStorage.setItem('myCat', 'Tom');
 </code></pre>
-
 <p>Everytime we send API request, we send this JWT stored in localStorage via HEADERS or FORMs.</p>
-
 <p>Storing in browser makes web app stateless but if this JWT is stolen or shared, Unintended user can access the data.</p>
-
 <p>Stealing localstorage data is easy with XSS attack. Suppose we have a form that takes the input and rendered that input on ours Users browser. Say a hero hacker input a javascript such as below into our input form</p>
-
 <pre><code>&lt;script&gt;
     var data = window.localStorage();
     // Set up our HTTP request
@@ -226,21 +207,13 @@ localStorage.setItem('myCat', 'Tom');
     xhr.send();
 &lt;/script&gt;
 </code></pre>
-
 <p>If this code in rendered in HTML of any other user, the hero Hacker can get JWT and access our Wonderful Web App as this user.</p>
-
 <p>This <code>XSS attack</code> can be easily prevented while storing this data by checking HTML entities and removing them, also thought its checked while storing data, we need to cross check while rendering in Client side and use something like Trusted source only to render</p>
-
 <h4 id="using-cookie">Using Cookie</h4>
-
 <p>Traditional storage, we always love :D may think it as not stateless. While using <a href="https://en.wikipedia.org/wiki/HTTP_cookie">cookie</a>, server can create cookie</p>
-
 <p>To avoid <code>XSS attack</code>, we can use <code>HttpOnly</code> cookie, this way cookie can&rsquo;t be accessed by javascript. But doing this, I think it violets purpose of JWT, the payload will be useless.</p>
-
 <p>With Cookie, we do have forever green <code>CSRF attack</code>.</p>
-
 <p>lets say, on my valueable website, I have form for logged In user to change password</p>
-
 <pre><code>&lt;form method=&quot;POST&quot; action=&quot;http://mjt.com.np/form&quot;&gt;
     username : &lt;input name=&quot;user&quot;&gt;
     change password : &lt;input type=&quot;password&quot; name=&quot;pass1&quot;&gt;
@@ -248,9 +221,7 @@ localStorage.setItem('myCat', 'Tom');
     &lt;input type=&quot;submit&quot; value=&quot;submit&quot;&gt;
 &lt;/form&gt;
 </code></pre>
-
 <p>Now another Hero hacker using my website, viewed page source of my webpage and copied above component made new url say&hellip; xyztheherohacker.com</p>
-
 <pre><code>//in xyztheherohacker.com/view-who-loves-you
 &lt;form method=&quot;POST&quot; action=&quot;http://mjt.com.np/form&quot;&gt;
     &lt;div&gt; Submit below to know who loves you &lt;/div&gt;
@@ -260,11 +231,8 @@ localStorage.setItem('myCat', 'Tom');
     &lt;input type=&quot;submit&quot; value=&quot;submit&quot;&gt;
 &lt;/form&gt;
 </code></pre>
-
 <p>and send this link to my users, by means like messagers, game request.. If the user opens this and type submit, password reset since all cookies will be pass with this site.</p>
-
 <p>To avoide this. we can add extra token than our javascript will add to form or header will sending the request.</p>
-
 <pre><code>// JWT payload can be
 {
     ss: &quot;api.mjt.com.np&quot;, //issuer
@@ -274,24 +242,16 @@ localStorage.setItem('myCat', 'Tom');
     XcrsfToken : &quot;a good token&quot;
 }
 </code></pre>
-
 <p>We can take this <code>XcrsfToken</code> toke with javascript and send by adding to form or header. This can&rsquo;t be done while using <code>HttpOnly</code> cookie as it can&rsquo;t be accessed by javascript.</p>
-
 <ul>
 <li>Note, Also this can be done by using extra request to api to get <code>XcrsfToken</code></li>
 </ul>
-
-<h2 id="a-name-accessunauthorizedkey-unauthorized-accessing-secret-key-of-jwt-a"><a name="accessUnauthorizedKey">Unauthorized accessing Secret key of JWT</a></h2>
-
+<h2 id="a-nameaccessunauthorizedkeyunauthorized-accessing-secret-key-of-jwta"><!-- raw HTML omitted -->Unauthorized accessing Secret key of JWT<!-- raw HTML omitted --></h2>
 <p>JWT token will be easily accessed by client so, it can be further processed without reaching to server to obtained <code>Secret key</code></p>
-
 <pre><code>var jwtToken = &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTUpUIiwiZ3JvdXBzIjpbXSwiZXhwIjoyMTMxMn0.qjUIVhO5XntQnWq_Au9BTUrM1ArBvfXyzY8PU7B2K1w&quot;;
 </code></pre>
-
 <p>Lets use this above <code>jwtToken</code>, now lets use <code>bruteforce attack</code>, a brute-force attack consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing correctly.</p>
-
 <p>Remember the function creating the signature?</p>
-
 <pre><code>// function that create signature, the third part of jwt
 function greatSignatureReturns (header,payload, secret) {
     return HMACSHA256(
@@ -300,32 +260,19 @@ function greatSignatureReturns (header,payload, secret) {
         secret)
 }
 </code></pre>
-
 <p>With some dictionary passing to the function, secret key of above <code>jwtToken</code> can be easily obtained as I used <code>secret</code> as secret key.</p>
-
 <p>There are many ways to do <code>bruteforce attack</code>. you can use <a href="https://en.wikipedia.org/wiki/John_the_Ripper">John the Ripper</a> or any other.</p>
-
 <h4 id="solution">Solution</h4>
-
 <p>Making the Secret key <code>large</code>, not using <code>common words</code> and also not using known <code>most used password</code> are the solution I know at the moment against <code>bruteforce attack</code>, may edit this page later :P</p>
-
 <p>With speed of 1,000,000,000 Passwords/sec, cracking a 8 character password composed using 96 characters takes 83.5 days.</p>
-
 <p>Key, 11 characters long has 542,950,367,897,600 combinations. It takes 10,534.62 hours or 438.94 days to crack key on computer that tries 25,769,803,776 keys per hour.
 <a href="https://web.archive.org/web/20180412051235/http://www.lockdown.co.uk/?pg=combi&amp;s=articles">More</a></p>
-
 <p>So using longer Secret key with alphanumeric seems safe to be used with JWT</p>
-
 <p>After writing this post, I did change some of my SECRET key used to create tokens :P</p>
-
 <p>Another way might be using different secret for different user, does this avoids stateless nature of JWT?</p>
-
 <h2 id="cons">cons</h2>
-
 <p>In a senario where it is required to revoke the token of user, JWT fails. Since JWT is not stored in server side, its hard to revoke the token.</p>
-
-<hr>
-
+<!-- raw HTML omitted -->
 <p>Well, Here are few of the things I experienced with <code>JWT</code>, anything to add up, please mention it in the comment below</p>
 
         </article>
@@ -335,14 +282,14 @@ function greatSignatureReturns (header,payload, secret) {
     <hr />
     <div
       class="fb-like"
-      data-href="http://mjt.com.np//posts/tech/all-about-jwt/"
+      data-href="//posts/tech/all-about-jwt/"
       data-layout="standard"
       data-action="like"
       data-show-faces="true"
     ></div>
     <div
       class="fb-comments"
-      data-href="http://mjt.com.np//posts/tech/all-about-jwt/"
+      data-href="//posts/tech/all-about-jwt/"
       data-numposts="5"
     ></div>
   </div>
@@ -434,7 +381,8 @@ if (!doNotTrack) {
 
 
 <script>
-  
+  <script async src="https://numb.avinash.com.np/tracker.js" data-bisl-server="https://numb.avinash.com.np" data-bisl-domain-id="7f120a90-f812-11ea-b80e-639b194090cd"></script>
+  //document.querySelector("table").classList.add("table");
   $("table").addClass("table");
   $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
 

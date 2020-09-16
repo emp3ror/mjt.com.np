@@ -1,65 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My tech posts on MJT</title>
-    <link>http://mjt.com.np/posts/tech/</link>
+    <link>/posts/tech/</link>
     <description>Recent content in My tech posts on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Aug 2018 18:34:02 +0000</lastBuildDate>
     
-	<atom:link href="http://mjt.com.np/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Resize or new partition for /var</title>
-      <link>http://mjt.com.np/posts/tech/resize-or-new-partition/</link>
+      <link>/posts/tech/resize-or-new-partition/</link>
       <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/resize-or-new-partition/</guid>
-      <description>why? Thought /var wouldnt need more than 5G of space, so I foolishly created partition of only 5G and set /var to it. You know when you got new ssd with only 256G space, you try to act cool and think you can optimize but the thing is I am too lazy to optimize everytime :sweat_smile: :sweat_smile: I checked my old hard disk the HDD and found out, /var was given 21G space and it was 15G filled already&amp;hellip; Then my adrenaline rush of need to resize came strong and I am changing this state while writting this blog :sweat_smile: , if something goes wrong, I would be needing bootable pendrive :sweat_smile: :sweat_smile:</description>
+      <guid>/posts/tech/resize-or-new-partition/</guid>
+      <description>why? Thought /var wouldnt need more than 5G of space, so I foolishly created partition of only 5G and set /var to it. You know when you got new ssd with only 256G space, you try to act cool and think you can optimize but the thing is I am too lazy to optimize everytime :sweat_smile: :sweat_smile: I checked my old hard disk the HDD and found out, /var was given 21G space and it was 15G filled already&amp;hellip; Then my adrenaline rush of need to resize came strong and I am changing this state while writting this blog :sweat_smile: , if something goes wrong, I would be needing bootable pendrive :sweat_smile: :sweat_smile: /var /var is a standard subdirectory of the root directory in Linux and other Unix-like operating systems that contains files to which the system writes data during the course of its operation.</description>
     </item>
     
     <item>
       <title>Learning Data Mining </title>
-      <link>http://mjt.com.np/posts/tech/learning-data-mining/</link>
+      <link>/posts/tech/learning-data-mining/</link>
       <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/learning-data-mining/</guid>
+      <guid>/posts/tech/learning-data-mining/</guid>
       <description>learning data mining
 Nature of data After observation, we can get 3 types of data
- Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
- Ordinal : Rank, satisfactions, mean may not be good&amp;hellip;
- Interval/Ratio : Measure, intervals like age, time, couts
+  Nominal : which has label or tags, cant take mean, we can take percentage (frequecy) though eg, sex, taste
+  Ordinal : Rank, satisfactions, mean may not be good&amp;hellip;
+  Interval/Ratio : Measure, intervals like age, time, couts
      Customer Age Sex Groceries Chocobars Type Satisfied Bulk     1 18 Male Rs 140 2 Milk 1 2   1 23 Female Rs 270 2 Dark 3 3   1 21 Female Rs 160 2 White 2 4   1 27 Male Rs 180 2 Milk 1 2     Type is Nominal and can be displayed in pie chart or bar chart Satisfied is Ordinal and can&amp;rsquo;t be displayed in pie chart.</description>
     </item>
     
     <item>
       <title>All about JWT</title>
-      <link>http://mjt.com.np/posts/tech/all-about-jwt/</link>
+      <link>/posts/tech/all-about-jwt/</link>
       <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/all-about-jwt/</guid>
+      <guid>/posts/tech/all-about-jwt/</guid>
       <description>JWT RFC7519 states:
 JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted.</description>
     </item>
     
     <item>
       <title>WebWeekend Kathmandu 2018 </title>
-      <link>http://mjt.com.np/posts/tech/wwktm-2018/</link>
+      <link>/posts/tech/wwktm-2018/</link>
       <pubDate>Thu, 14 Mar 2019 16:20:47 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/wwktm-2018/</guid>
+      <guid>/posts/tech/wwktm-2018/</guid>
       <description>I will write about web weekend 2018 here (hopefully someday)
 Facts and Figures  ~300 attendees in the whole event Representatives from &amp;gt;55 different companies in Nepal 11 different nationalities at the conference 10% female attendees 😢 8 wwktm sponsored attendees (exluding other partial discounts) 80 people hiked 1 HUGE bag of trash collected from the trail. We like our trails clean.  Web Weekend Kathmandu is happening this year on septmember.</description>
     </item>
     
     <item>
       <title>Switching to HUGO</title>
-      <link>http://mjt.com.np/posts/tech/using-hugo/</link>
+      <link>/posts/tech/using-hugo/</link>
       <pubDate>Wed, 13 Mar 2019 12:48:42 +0000</pubDate>
       
-      <guid>http://mjt.com.np/posts/tech/using-hugo/</guid>
+      <guid>/posts/tech/using-hugo/</guid>
       <description>From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&amp;hellip; yay
 I did thought, &amp;ldquo;Oh why not just use medium.com and get rid of all setting up hassles&amp;rdquo;, then god spoke with this message from medium.com At that point, I realised, I shouldn&amp;rsquo;t host my amazing articles ( :P ) in others&amp;rsquo; platform :D :D
 Hugo Hugo is open-source static site builder written in Go lang.</description>

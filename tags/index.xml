@@ -1,121 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MJT</title>
-    <link>http://mjt.com.np/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 15:07:51 +0000</lastBuildDate>
     
-	<atom:link href="http://mjt.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>linux</title>
-      <link>http://mjt.com.np/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>partition</title>
-      <link>http://mjt.com.np/tags/partition/</link>
+      <link>/tags/partition/</link>
       <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/partition/</guid>
+      <guid>/tags/partition/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>http://mjt.com.np/tags/shell/</link>
+      <link>/tags/shell/</link>
       <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/shell/</guid>
+      <guid>/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Post</title>
-      <link>http://mjt.com.np/tags/post/</link>
+      <link>/tags/post/</link>
       <pubDate>Tue, 16 Apr 2019 09:42:47 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>race</title>
-      <link>http://mjt.com.np/tags/race/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/race/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>run</title>
-      <link>http://mjt.com.np/tags/run/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/run/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>trails</title>
-      <link>http://mjt.com.np/tags/trails/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/trails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Mining</title>
-      <link>http://mjt.com.np/tags/data-mining/</link>
-      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
-      
-      <guid>http://mjt.com.np/tags/data-mining/</guid>
+      <guid>/tags/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://mjt.com.np/tags/r/</link>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>race</title>
+      <link>/tags/race/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      
+      <guid>/tags/race/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>run</title>
+      <link>/tags/run/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      
+      <guid>/tags/run/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trails</title>
+      <link>/tags/trails/</link>
+      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
+      
+      <guid>/tags/trails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Mining</title>
+      <link>/tags/data-mining/</link>
       <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/r/</guid>
+      <guid>/tags/data-mining/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jwt</title>
-      <link>http://mjt.com.np/tags/jwt/</link>
+      <link>/tags/jwt/</link>
       <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/jwt/</guid>
+      <guid>/tags/jwt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>token</title>
-      <link>http://mjt.com.np/tags/token/</link>
+      <link>/tags/token/</link>
       <pubDate>Fri, 15 Mar 2019 05:59:53 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/token/</guid>
+      <guid>/tags/token/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>http://mjt.com.np/tags/test/</link>
+      <link>/tags/test/</link>
       <pubDate>Thu, 14 Mar 2019 16:20:47 +0000</pubDate>
       
-      <guid>http://mjt.com.np/tags/test/</guid>
+      <guid>/tags/test/</guid>
       <description></description>
     </item>
     

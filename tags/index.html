@@ -8,11 +8,11 @@
     <meta name="description" content="" />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
-    <meta property="og:url" content="http://mjt.com.np//tags/" />
+    <meta property="og:url" content="//tags/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tags" />
     <meta property="og:description" content="" />
-    <link rel="canonical" href="http://mjt.com.np/tags/" />
+    <link rel="canonical" href="/tags/" />
 
     <link
       rel="stylesheet"
@@ -26,12 +26,14 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body>
@@ -42,6 +44,18 @@
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
     ></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
@@ -68,9 +82,9 @@
     
     
     <li class="nav-item">
-      <a class="nav-link" href="/posts/run/">
+      <a class="nav-link" href="/posts/">
         
-        <span>My Running posts</span>
+        <span>My Posts</span>
       </a>
     </li>
     
@@ -107,7 +121,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/linux/">
+          <a href="/tags/linux/">
             <h1>
               linux
             </h1>
@@ -135,7 +149,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/partition/">
+          <a href="/tags/partition/">
             <h1>
               partition
             </h1>
@@ -163,7 +177,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/shell/">
+          <a href="/tags/shell/">
             <h1>
               shell
             </h1>
@@ -191,7 +205,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/post/">
+          <a href="/tags/post/">
             <h1>
               Post
             </h1>
@@ -219,7 +233,35 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/race/">
+          <a href="/tags/r/">
+            <h1>
+              R
+            </h1>
+          </a>
+          <div class="date">2019-04-16</div>
+        </div>
+        <div class="card-body">
+               
+          <p>
+            
+
+            
+          </p>
+          <ul class="tags">
+                
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="row">
+    <div class="col">
+      <div class="card mb-5">
+        <div class="card-header">
+          <a href="/tags/race/">
             <h1>
               race
             </h1>
@@ -247,7 +289,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/run/">
+          <a href="/tags/run/">
             <h1>
               run
             </h1>
@@ -275,7 +317,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/trails/">
+          <a href="/tags/trails/">
             <h1>
               trails
             </h1>
@@ -303,7 +345,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/data-mining/">
+          <a href="/tags/data-mining/">
             <h1>
               Data Mining
             </h1>
@@ -331,35 +373,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/r/">
-            <h1>
-              R
-            </h1>
-          </a>
-          <div class="date">2019-03-27</div>
-        </div>
-        <div class="card-body">
-               
-          <p>
-            
-
-            
-          </p>
-          <ul class="tags">
-                
-              </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  <div class="row">
-    <div class="col">
-      <div class="card mb-5">
-        <div class="card-header">
-          <a href="http://mjt.com.np/tags/jwt/">
+          <a href="/tags/jwt/">
             <h1>
               jwt
             </h1>
@@ -387,7 +401,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/token/">
+          <a href="/tags/token/">
             <h1>
               token
             </h1>
@@ -415,7 +429,7 @@
     <div class="col">
       <div class="card mb-5">
         <div class="card-header">
-          <a href="http://mjt.com.np/tags/test/">
+          <a href="/tags/test/">
             <h1>
               test
             </h1>
@@ -526,7 +540,8 @@ if (!doNotTrack) {
 
 
 <script>
-  
+  <script async src="https://numb.avinash.com.np/tracker.js" data-bisl-server="https://numb.avinash.com.np" data-bisl-domain-id="7f120a90-f812-11ea-b80e-639b194090cd"></script>
+  //document.querySelector("table").classList.add("table");
   $("table").addClass("table");
   $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
 

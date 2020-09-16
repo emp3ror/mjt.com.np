@@ -9,12 +9,12 @@
 Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55 different companies in Nepal 11 different nationalities at the conference 10% female attendees 😢 8 wwktm sponsored attendees (exluding other partial discounts) 80 people hiked 1 HUGE bag of trash collected from the trail. We like our trails clean.  Web Weekend Kathmandu is happening this year on septmember." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
-    <meta property="og:url" content="http://mjt.com.np//posts/tech/wwktm-2018/" />
+    <meta property="og:url" content="//posts/tech/wwktm-2018/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="WebWeekend Kathmandu 2018 " />
     <meta property="og:description" content="I will write about web weekend 2018 here (hopefully someday)
 Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55 different companies in Nepal 11 different nationalities at the conference 10% female attendees 😢 8 wwktm sponsored attendees (exluding other partial discounts) 80 people hiked 1 HUGE bag of trash collected from the trail. We like our trails clean.  Web Weekend Kathmandu is happening this year on septmember." />
-    <link rel="canonical" href="http://mjt.com.np/posts/tech/wwktm-2018/" />
+    <link rel="canonical" href="/posts/tech/wwktm-2018/" />
 
     <link
       rel="stylesheet"
@@ -28,12 +28,14 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body>
@@ -44,6 +46,18 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
     ></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
@@ -70,9 +84,9 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
     
     
     <li class="nav-item">
-      <a class="nav-link" href="/posts/run/">
+      <a class="nav-link" href="/posts/">
         
-        <span>My Running posts</span>
+        <span>My Posts</span>
       </a>
     </li>
     
@@ -110,12 +124,8 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
       <hr />
       <div class="content">
         <article class="post-content">
-          
-
-<p>I will write about web weekend 2018 here (hopefully someday)</p>
-
+          <p>I will write about web weekend 2018 here (hopefully someday)</p>
 <h4 id="facts-and-figures">Facts and Figures</h4>
-
 <ul>
 <li>~300 attendees in the whole event</li>
 <li>Representatives from &gt;55 different companies in Nepal</li>
@@ -125,11 +135,8 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
 <li>80 people hiked</li>
 <li>1 HUGE bag of trash collected from the trail. We like our trails clean.</li>
 </ul>
-
 <p>Web Weekend Kathmandu is happening this year on septmember. Visit past <a href="https://2018.wwktm.co/">wwktm</a></p>
-
 <p>More blogs/article on Web Weekend kathmandu</p>
-
 <ul>
 <li><a href="https://avinash.com.np/2018/10/16/web-weekend-kathmandu-2018-wrap-up/"><code>Avinash</code></a></li>
 </ul>
@@ -141,14 +148,14 @@ Facts and Figures  ~300 attendees in the whole event Representatives from &gt;55
     <hr />
     <div
       class="fb-like"
-      data-href="http://mjt.com.np//posts/tech/wwktm-2018/"
+      data-href="//posts/tech/wwktm-2018/"
       data-layout="standard"
       data-action="like"
       data-show-faces="true"
     ></div>
     <div
       class="fb-comments"
-      data-href="http://mjt.com.np//posts/tech/wwktm-2018/"
+      data-href="//posts/tech/wwktm-2018/"
       data-numposts="5"
     ></div>
   </div>
@@ -240,7 +247,8 @@ if (!doNotTrack) {
 
 
 <script>
-  
+  <script async src="https://numb.avinash.com.np/tracker.js" data-bisl-server="https://numb.avinash.com.np" data-bisl-domain-id="7f120a90-f812-11ea-b80e-639b194090cd"></script>
+  //document.querySelector("table").classList.add("table");
   $("table").addClass("table");
   $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
 

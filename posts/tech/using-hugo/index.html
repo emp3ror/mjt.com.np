@@ -10,13 +10,13 @@ I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting 
 Hugo Hugo is open-source static site builder written in Go lang." />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
-    <meta property="og:url" content="http://mjt.com.np//posts/tech/using-hugo/" />
+    <meta property="og:url" content="//posts/tech/using-hugo/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Switching to HUGO" />
     <meta property="og:description" content="From this day, I am using HUGO, switched from Wordpress to my own Angularjs SPA static site to HUGO&hellip; yay
 I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this message from medium.com At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D
 Hugo Hugo is open-source static site builder written in Go lang." />
-    <link rel="canonical" href="http://mjt.com.np/posts/tech/using-hugo/" />
+    <link rel="canonical" href="/posts/tech/using-hugo/" />
 
     <link
       rel="stylesheet"
@@ -30,12 +30,14 @@ Hugo Hugo is open-source static site builder written in Go lang." />
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://mjt.com.np/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   </head>
 
   <body>
@@ -46,6 +48,18 @@ Hugo Hugo is open-source static site builder written in Go lang." />
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=138452622883368&autoLogAppEvents=1"
     ></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 
@@ -72,9 +86,9 @@ Hugo Hugo is open-source static site builder written in Go lang." />
     
     
     <li class="nav-item">
-      <a class="nav-link" href="/posts/run/">
+      <a class="nav-link" href="/posts/">
         
-        <span>My Running posts</span>
+        <span>My Posts</span>
       </a>
     </li>
     
@@ -107,43 +121,25 @@ Hugo Hugo is open-source static site builder written in Go lang." />
       <hr />
       <div class="content">
         <article class="post-content">
-          
-
-<p>From this day, I am using HUGO, switched from Wordpress to my own <a href="https://github.com/emp3ror/static-site-generator">Angularjs SPA static site</a> to HUGO&hellip; yay</p>
-
+          <p>From this day, I am using HUGO, switched from Wordpress to my own <a href="https://github.com/emp3ror/static-site-generator">Angularjs SPA static site</a> to HUGO&hellip; yay</p>
 <p>I did thought, &ldquo;Oh why not just use medium.com and get rid of all setting up hassles&rdquo;, then god spoke with this message from medium.com
-<img src="/img/medium.png" alt="Medium image" /></p>
-
+<img src="/img/medium.png" alt="Medium image"></p>
 <p>At that point, I realised, I shouldn&rsquo;t host my amazing articles ( :P ) in others&rsquo; platform :D :D</p>
-
 <h2 id="hugo">Hugo</h2>
-
 <p>Hugo is open-source static site builder written in Go lang. To know more about check hugo official site <a href="https://gohugo.io/">https://gohugo.io/</a></p>
-
 <h3 id="getting-ready-for-hugo-in-vscode">Getting Ready for Hugo in VSCODE</h3>
-
 <p>Hugo use mark down for writing blogs/article. Instead of using different IDE, I am using VSCODE which I already use for my works. Below are few plugins I added in Vscode.</p>
-
 <h4 id="markdown-plugin-for-vscode">Markdown plugin for vscode</h4>
-
 <p>I am using this plugin for easy typing/creating markdown
 <a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a>.</p>
-
 <p>Seems, MD is already supported by vscode but I installed it anyway :D :D</p>
-
 <h4 id="date-plugin-for-vscode">Date plugin for vscode</h4>
-
 <p>While creating blog post in text-editor, it hard to add date so I installed this plugin.</p>
-
 <p><a href="https://marketplace.visualstudio.com/items?itemname=jsynowiec.vscode-insertdatestring">insert Date Time</a></p>
-
 <pre><code>Ctrl+Alt+Shift+I then ISO // to insert iso date
 </code></pre>
-
 <h3 id="git-worktree">Git worktree</h3>
-
 <p>Amazingly I got to learn about git worktree. Its a feature of git to have a folder with different branch in same repository. Learn more about git worktree in <a href="https://git-scm.com/docs/git-worktree">git website</a></p>
-
 <pre><code>// Setting up public directory with gh-pages branch
 $ git worktree add -B gh-pages public origin/gh-pages
 </code></pre>
@@ -155,14 +151,14 @@ $ git worktree add -B gh-pages public origin/gh-pages
     <hr />
     <div
       class="fb-like"
-      data-href="http://mjt.com.np//posts/tech/using-hugo/"
+      data-href="//posts/tech/using-hugo/"
       data-layout="standard"
       data-action="like"
       data-show-faces="true"
     ></div>
     <div
       class="fb-comments"
-      data-href="http://mjt.com.np//posts/tech/using-hugo/"
+      data-href="//posts/tech/using-hugo/"
       data-numposts="5"
     ></div>
   </div>
@@ -254,7 +250,8 @@ if (!doNotTrack) {
 
 
 <script>
-  
+  <script async src="https://numb.avinash.com.np/tracker.js" data-bisl-server="https://numb.avinash.com.np" data-bisl-domain-id="7f120a90-f812-11ea-b80e-639b194090cd"></script>
+  //document.querySelector("table").classList.add("table");
   $("table").addClass("table");
   $(".task-list label").has(".task-list-item").append("<i class='fas fa-check'>")
 
