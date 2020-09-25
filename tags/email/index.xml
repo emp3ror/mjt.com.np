@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>email on MJT</title>
+    <link>/tags/email/</link>
+    <description>Recent content in email on MJT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Email `IE` grandpa of messaging</title>
+      <link>/posts/tech/email-grandpa-of-messaging/</link>
+      <pubDate>Fri, 25 Sep 2020 05:24:51 +0000</pubDate>
+      
+      <guid>/posts/tech/email-grandpa-of-messaging/</guid>
+      <description>We all have been getting email, sending email, some simple ones, some fancy html ones&amp;hellip; Recently I tried to create responsive email for my work and here&amp;rsquo;s my journey of creating an email.
+First I tried to use MJML tool, I couldn&amp;rsquo;t change email&amp;rsquo;s main content width&amp;hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)</description>
+    </item>
+    
+  </channel>
+</rss>

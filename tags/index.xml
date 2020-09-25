@@ -6,10 +6,19 @@
     <description>Recent content in Tags on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 15:07:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>email</title>
+      <link>/tags/email/</link>
+      <pubDate>Fri, 25 Sep 2020 05:24:51 +0000</pubDate>
+      
+      <guid>/tags/email/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>

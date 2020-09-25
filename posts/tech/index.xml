@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Email `IE` grandpa of messaging</title>
+      <link>/posts/tech/email-grandpa-of-messaging/</link>
+      <pubDate>Fri, 25 Sep 2020 05:24:51 +0000</pubDate>
+      
+      <guid>/posts/tech/email-grandpa-of-messaging/</guid>
+      <description>We all have been getting email, sending email, some simple ones, some fancy html ones&amp;hellip; Recently I tried to create responsive email for my work and here&amp;rsquo;s my journey of creating an email.
+First I tried to use MJML tool, I couldn&amp;rsquo;t change email&amp;rsquo;s main content width&amp;hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)</description>
+    </item>
+    
+    <item>
       <title>Resize or new partition for /var</title>
       <link>/posts/tech/resize-or-new-partition/</link>
       <pubDate>Sun, 28 Jul 2019 15:07:51 +0000</pubDate>

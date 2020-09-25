@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/email/</loc>
+    <lastmod>2020-09-25T05:24:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tech/email-grandpa-of-messaging/</loc>
+    <lastmod>2020-09-25T05:24:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-25T05:24:51+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/linux/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
   </url>
@@ -19,11 +34,6 @@
   
   <url>
     <loc>/tags/shell/</loc>
-    <lastmod>2019-07-28T15:07:51+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
   </url>
   
