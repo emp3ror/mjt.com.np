@@ -4,3 +4,6 @@ title = "MJT"
 theme = "mjt"
 sectionPagesMenu = "main"
 googleAnalytics= "UA-144760062-1"
+
+[params]
+    hostname = "http://mjt.com.np"

@@ -23,16 +23,12 @@
     <hr />
     <div
       class="fb-like"
-      data-href="{{ .Site.BaseURL }}{{ .RelPermalink }}"
+      data-href="{{ .Site.Params.hostname }}{{ .RelPermalink }}"
       data-layout="standard"
       data-action="like"
       data-show-faces="true"
     ></div>
-    <div
-      class="fb-comments"
-      data-href="{{ .Site.BaseURL }}{{ .RelPermalink }}"
-      data-numposts="5"
-    ></div>
+    <div class="fb-comments" data-href="http:{{ .Site.Params.hostname }}{{ .RelPermalink }}" data-numposts="5" data-width=""></div>
   </div>
 </div>
 {{ end }}
