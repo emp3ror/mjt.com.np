@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Email `IE` grandpa of messaging - MJT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for my work and here&rsquo;s my journey of creating an email.
-First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)" />
+    <meta name="description" content="We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for work and here&rsquo;s my journey of creating an email.
+First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, didn&rsquo;t dive much into docs and example, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride of me awaken ;)" />
     <meta name="author" content="MJT" />
     <meta name="keywords" content="" />
     <meta property="og:url" content="//posts/tech/email-grandpa-of-messaging/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Email `IE` grandpa of messaging" />
-    <meta property="og:description" content="We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for my work and here&rsquo;s my journey of creating an email.
-First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)" />
+    <meta property="og:description" content="We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for work and here&rsquo;s my journey of creating an email.
+First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, didn&rsquo;t dive much into docs and example, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride of me awaken ;)" />
     <link rel="canonical" href="/posts/tech/email-grandpa-of-messaging/" />
 
     <link
@@ -113,13 +113,13 @@ First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main conte
       <hr />
       <div class="content">
         <article class="post-content">
-          <p>We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for my work and here&rsquo;s my journey of creating an email.</p>
-<p>First I tried to use <a href="https://mjml.io/">MJML</a> tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)</p>
+          <p>We all have been getting email, sending email, some simple ones, some fancy html ones&hellip; Recently I tried to create responsive email for work and here&rsquo;s my journey of creating an email.</p>
+<p>First I tried to use <a href="https://mjml.io/">MJML</a> tool, I couldn&rsquo;t change email&rsquo;s main content width&hellip; mjml takes 600px width by default and our design has 800px, also had to change css styles, didn&rsquo;t dive much into docs and example, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride of me awaken ;)</p>
 <p>Well nothing big, converted design to html template and send to my email, the gmail&hellip; ohooo finished, perfect&hellip;</p>
 <h5 id="--rise-of-inline-css">- Rise of inline css</h5>
-<p>oh no, gmail doesnt support class, dammit, I will take back that perfect :P</p>
+<p>oh no, gmail doesnt support class, dammit, I will take back that perfect 😜</p>
 <p><code>Inspect element</code> -&gt; gmail adds extra character to class so style was not working</p>
-<p>looking around google searches and stackoverflow, I figure out we need add inline styles that element&hellip; so I used <a href="https://htmlemail.io/inline/">https://htmlemail.io/inline/</a> for adding styles to that element according the class.</p>
+<p>looking around google searches and stackoverflow, I figure out we need to add inline styles that element&hellip; so I used <a href="https://htmlemail.io/inline/">https://htmlemail.io/inline/</a> for adding styles to that element according the class (generated inline css).</p>
 <h5 id="--rise-of-fixed-width">- Rise of fixed width</h5>
 <p>Started looking good in desktop, guessed its responsive so should be good in mobile view too, but noo, email does not want to be responsive,</p>
 <p>Checked different sites for resources to make it responsive, all suggested to use media query, but media-query does not work in inline css :( neither its working inside <code>&lt;style&gt;&lt;style&gt;</code> coz class is being mummified with extra random characters added (at least in Gmail).</p>
@@ -131,7 +131,7 @@ First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main conte
 [id*=&quot;block&quot;] {
 
 }
-</code></pre><p>it didnt work either as expected so, make final solution was to give fixed width div and make it <code>display: inline-block</code> like</p>
+</code></pre><p>it didnt work as expected so, final solution was to give fixed width div and make it <code>display: inline-block</code> like:</p>
 <pre><code>&lt;div styles:&quot;width:800px&quot;&gt;
     &lt;div styles:&quot;max-width:250px; width:100%; display:inline-block;&quot;&gt;
     &lt;div styles:&quot;max-width:550px; ; width:100%; display:inline-block;&quot;&gt;
@@ -142,11 +142,12 @@ First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main conte
 <p>well <code>float</code> doesn&rsquo;t work in email neither do <code>position: absolute</code>&hellip; complex huh, gradient css or svg does not load oops</p>
 <p>pufff, Lots of <code>divs tables</code> inside <code>div's</code></p>
 <h4 id="guess-whos-back---table---back-again">Guess who&rsquo;s back - <code>&lt;Table&gt;</code> - back again</h4>
+<p><img src="https://media2.giphy.com/media/e5nosGeL5NvgY/giphy.gif" alt="alt &ldquo;guess whose back&rdquo;"></p>
 <p>Gmail started looking good but people uses variety of email clients, yahoo, aol, outlook, its Ok in web browser but desktop app, it was worst&hellip;</p>
 <p>All <code>div's</code> had to be converted to <code>table - td</code>,</p>
 <p>Desktop app doesn&rsquo;t load image by default and background-image in css was out of concern so <code>bgColor</code> of table with base color for fall back</p>
 <h4 id="fonts">Fonts</h4>
-<p>Well I must say, I can only distinguish between serif and san-serif but not all fonts with san-serif attributes so I usually get confused if fonts changed were working or not :P</p>
+<p>Well I must say, I can only distinguish between serif and san-serif but not all fonts with san-serif attributes so I usually get confused if fonts changed were working or not 😜</p>
 <p>I used <code>&lt;link&gt;</code> to add open-sans which seems didn&rsquo;t work, so added</p>
 <pre><code>font-family: Helvetica, Arial, sans-serif;
 </code></pre><p>Normally font family added in parent should propagate to its child elements, well this is <code>email</code> and it doesn&rsquo;t happen.</p>
@@ -156,7 +157,7 @@ First I tried to use MJML tool, I couldn&rsquo;t change email&rsquo;s main conte
 <p>To fix this, I added &lsquo;font&rsquo; class to each element with text and let inline css be generated.</p>
 <p>Finally all started working well, unless iPhone came to rescue with font issue (satirical) , it was showing Arial font for some text and Helvetica for some</p>
 <p>The fix: Text must be inside <code>&lt;p&gt;</code> tag</p>
-<p>Now, must of the issue&rsquo;s are solved, email sent successfully, outlook desktop application show Okish email, and am off for happy weekend, yay</p>
+<p>Now, most of the issue&rsquo;s are solved, email sent successfully, outlook desktop application show Okish email, and am off for happy weekend, yay</p>
 <p>if something I should have tried or missed, do comment, Thank you for reading</p>
 
         </article>
