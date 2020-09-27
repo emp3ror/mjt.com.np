@@ -4,21 +4,22 @@ date = "2020-09-25T05:24:51Z"
 tags = ["email"]
 draft = false
 author = "admin"
+emoji= true
 +++
 
-We all have been getting email, sending email, some simple ones, some fancy html ones... Recently I tried to create responsive email for my work and here's my journey of creating an email.
+We all have been getting email, sending email, some simple ones, some fancy html ones... Recently I tried to create responsive email for work and here's my journey of creating an email.
 
-First I tried to use [MJML](https://mjml.io/) tool, I couldn't change email's main content width... mjml takes 600px width by default and our design has 800px, also had to change css styles, instead of reading docs, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride me awoke ;)
+First I tried to use [MJML](https://mjml.io/) tool, I couldn't change email's main content width... mjml takes 600px width by default and our design has 800px, also had to change css styles, didn't dive much into docs and example, i tried being hackies and after failing, I thought, whatever I know html/css3 pretty well, I will do it without using any tool, the pride of me awaken ;)
 
 Well nothing big, converted design to html template and send to my email, the gmail... ohooo finished, perfect... 
 
 ##### - Rise of inline css
 
-oh no, gmail doesnt support class, dammit, I will take back that perfect :P 
+oh no, gmail doesnt support class, dammit, I will take back that perfect :stuck_out_tongue_winking_eye: 
 
 `Inspect element` -> gmail adds extra character to class so style was not working
 
-looking around google searches and stackoverflow, I figure out we need add inline styles that element... so I used [https://htmlemail.io/inline/](https://htmlemail.io/inline/) for adding styles to that element according the class.
+looking around google searches and stackoverflow, I figure out we need to add inline styles that element... so I used [https://htmlemail.io/inline/](https://htmlemail.io/inline/) for adding styles to that element according the class (generated inline css).
 
 ##### - Rise of fixed width
 
@@ -37,7 +38,7 @@ thought this could be solution
 }
 ```
 
-it didnt work either as expected so, make final solution was to give fixed width div and make it `display: inline-block` like
+it didnt work as expected so, final solution was to give fixed width div and make it `display: inline-block` like:
 ```
 <div styles:"width:800px">
     <div styles:"max-width:250px; width:100%; display:inline-block;">
@@ -56,6 +57,8 @@ pufff, Lots of `divs tables` inside `div's`
 
 #### Guess who's back - `<Table>` - back again 
 
+![alt "guess whose back"](https://media2.giphy.com/media/e5nosGeL5NvgY/giphy.gif)
+
 Gmail started looking good but people uses variety of email clients, yahoo, aol, outlook, its Ok in web browser but desktop app, it was worst... 
 
 All `div's` had to be converted to `table - td`, 
@@ -64,7 +67,7 @@ Desktop app doesn't load image by default and background-image in css was out of
 
 #### Fonts
 
-Well I must say, I can only distinguish between serif and san-serif but not all fonts with san-serif attributes so I usually get confused if fonts changed were working or not :P
+Well I must say, I can only distinguish between serif and san-serif but not all fonts with san-serif attributes so I usually get confused if fonts changed were working or not :stuck_out_tongue_winking_eye:
 
 I used `<link>` to add open-sans which seems didn't work, so added
 
@@ -83,6 +86,6 @@ Finally all started working well, unless iPhone came to rescue with font issue (
 
 The fix: Text must be inside `<p>` tag 
 
-Now, must of the issue's are solved, email sent successfully, outlook desktop application show Okish email, and am off for happy weekend, yay
+Now, most of the issue's are solved, email sent successfully, outlook desktop application show Okish email, and am off for happy weekend, yay
 
 if something I should have tried or missed, do comment, Thank you for reading
