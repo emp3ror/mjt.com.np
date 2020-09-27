@@ -4,6 +4,11 @@ title = "MJT"
 theme = "mjt"
 sectionPagesMenu = "main"
 googleAnalytics= "UA-144760062-1"
+enableEmoji = true
 
 [params]
     hostname = "http://mjt.com.np"
+
+[blackfriday]
+   plainIDAnchors = true
+   hrefTargetBlank = true
