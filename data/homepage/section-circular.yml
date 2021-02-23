@@ -1,0 +1,15 @@
+title: Testing Testing
+circleBlock:
+  - desc: Lorem lorem lorem
+    title: Merge
+  - desc: lorem lorem lorem
+    title: lorem 2
+  - desc: loremloremloremloremlorem
+    title: lorem 3
+callForActionBtn:
+  btn1:
+    title: lorem
+    url: 'http://lorem'
+  btn2:
+    title: lorem 2
+    url: 'http://lorem'
