@@ -6,11 +6,7 @@
     <description>Recent content in email on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/email/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate><atom:link href="/tags/email/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Email `IE` grandpa of messaging</title>
       <link>/posts/tech/email-grandpa-of-messaging/</link>

@@ -1,144 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/tags/email/</loc>
     <lastmod>2020-09-25T05:24:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/email-grandpa-of-messaging/</loc>
     <lastmod>2020-09-25T05:24:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2020-09-25T05:24:51+00:00</lastmod>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2020-09-25T05:24:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/linux/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/partition/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/resize-or-new-partition/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/shell/</loc>
     <lastmod>2019-07-28T15:07:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/run/</loc>
     <lastmod>2019-04-16T09:42:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/post/</loc>
     <lastmod>2019-04-16T09:42:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/run/ktm-trail-series/</loc>
     <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/race/</loc>
     <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/run/</loc>
     <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/trails/</loc>
     <lastmod>2019-04-16T08:29:32+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/run/my-runnig-goals/</loc>
     <lastmod>2019-04-05T03:47:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/data-mining/</loc>
     <lastmod>2019-03-27T14:54:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/learning-data-mining/</loc>
     <lastmod>2019-03-27T14:54:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-03-27T14:54:42+00:00</lastmod>
+  </url><url>
     <loc>/posts/tech/all-about-jwt/</loc>
     <lastmod>2019-03-15T05:59:53+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/jwt/</loc>
     <lastmod>2019-03-15T05:59:53+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/token/</loc>
     <lastmod>2019-03-15T05:59:53+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/test/</loc>
     <lastmod>2019-03-14T16:20:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/wwktm-2018/</loc>
     <lastmod>2019-03-14T16:20:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/using-hugo/</loc>
     <lastmod>2019-03-13T12:48:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2018-08-30T18:34:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/tech/</loc>
     <lastmod>2018-08-30T18:34:02+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2014-11-08T16:42:18+04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+  </url><url>
+    <loc>/privacy-policy/</loc>
     <lastmod>2014-11-08T16:42:18+04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
   </url>
-  
 </urlset>

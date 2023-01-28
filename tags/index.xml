@@ -6,11 +6,7 @@
     <description>Recent content in Tags on MJT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 25 Sep 2020 05:24:51 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>email</title>
       <link>/tags/email/</link>
@@ -57,15 +53,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>race</title>
       <link>/tags/race/</link>
       <pubDate>Tue, 16 Apr 2019 08:29:32 +0000</pubDate>
@@ -98,6 +85,15 @@
       <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
       
       <guid>/tags/data-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Wed, 27 Mar 2019 14:54:42 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
