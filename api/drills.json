@@ -1,1 +1,16 @@
-{}
+{
+    "drills": [
+        {
+            "id": "Soccer Awareness & Quick Play - Checking Your Shoulder Video",
+            "url": "https://www.youtube.com/watch?v=2q6-vP_jE6I&ab_channel=ROCATechnicalFootballTraining",
+            "title": "Soccer Awareness & Quick Play - Checking Your Shoulder Video",
+            "type": "youtube"
+          },
+          {
+            "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+            "url": "https://youtu.be/ioL17MBFU10?t=242",
+            "title": "Advanced 1on1 Soccer Training Drills | Joner Football",
+            "type": "youtube"
+          }
+    ]
+}
